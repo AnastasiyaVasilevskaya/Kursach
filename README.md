@@ -1,0 +1,2 @@
+# Kursach
+DevOps, CI/CD
