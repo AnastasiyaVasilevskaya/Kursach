@@ -1,6 +1,5 @@
 name: CI/CD Pipeline
 
-
 on:
   push:
     branches:
@@ -14,18 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.8.10'
-          cache: 'pip'
-      - run: pip install -r requirements.txt
-
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-
-      - name: Run tests
-        run: |
-          pytest
-
+      - name: Build the Docker image
+        run: docker build -t course_image python/.
+      - name: Deploy the Docker image
+        run: docker run -p 80:80 my_obraz
