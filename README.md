@@ -1,2 +1,2 @@
-# Kursach
+# Kursovoy project
 DevOps, CI/CD
