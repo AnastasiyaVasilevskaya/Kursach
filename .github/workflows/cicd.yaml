@@ -1,5 +1,6 @@
 name: CI/CD Pipeline
 
+
 on:
   push:
     branches:
@@ -15,5 +16,9 @@ jobs:
 
       - name: Build the Docker image
         run: docker build -t my_obraz .
+
       - name: Deploy the Docker image
         run: docker run -p 80:80 my_obraz
+
+      - name: Print Message
+        run: echo "Docker image deployed successfully"
