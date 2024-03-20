@@ -7,11 +7,13 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: self-hosted
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        container:
+          image: my_obraz
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -25,3 +27,4 @@ jobs:
       - name: Run tests
         run: |
           pytest
+
