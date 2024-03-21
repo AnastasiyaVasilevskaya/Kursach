@@ -9,14 +9,20 @@ jobs:
   build:
     runs-on: self-hosted
 
+    stages:
+      - build
+      - deploy
+      -
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Build the Docker image
+        stage: build
         run: docker build -t my_obraz .
 
       - name: Deploy the Docker image
+        stage: deploy
         run: docker run -d -p 127.0.0.1:80:80 my_obraz
 
       - name: Print Message
