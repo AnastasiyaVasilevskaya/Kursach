@@ -1,0 +1,144 @@
+[2024-03-21 06:52:13Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 06:52:13Z INFO HostContext] Well known config file 'Credentials': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.credentials'
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 06:52:13Z INFO HostContext] Well known config file 'Runner': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.runner'
+[2024-03-21 06:52:13Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2024-03-21 06:52:13Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.22000.
+[2024-03-21 06:52:13Z INFO Listener] Version: 2.314.1
+[2024-03-21 06:52:13Z INFO Listener] Commit: 976290d966e6cc3e748a49bf8fdbe139ff764201
+[2024-03-21 06:52:13Z INFO Listener] Culture: ru-BY
+[2024-03-21 06:52:13Z INFO Listener] UI Culture: ru-RU
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 06:52:13Z INFO Listener] Validating directory permissions for: 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 06:52:13Z INFO CommandLineParser] Parse
+[2024-03-21 06:52:13Z INFO CommandLineParser] Parsing 1 args
+[2024-03-21 06:52:13Z INFO CommandLineParser] parsing argument
+[2024-03-21 06:52:13Z INFO CommandLineParser] HasArgs: False
+[2024-03-21 06:52:13Z INFO CommandLineParser] Adding Command: run
+[2024-03-21 06:52:13Z INFO Listener] Arguments parsed
+[2024-03-21 06:52:13Z INFO Runner] ExecuteCommand
+[2024-03-21 06:52:13Z INFO ConfigurationStore] currentAssemblyLocation: D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin\Runner.Listener.dll
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 06:52:13Z INFO ConfigurationStore] binPath: D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 06:52:13Z INFO ConfigurationStore] RootFolder: D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 06:52:13Z INFO HostContext] Well known config file 'Runner': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.runner'
+[2024-03-21 06:52:13Z INFO ConfigurationStore] ConfigFilePath: D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.runner
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 06:52:13Z INFO HostContext] Well known config file 'Credentials': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.credentials'
+[2024-03-21 06:52:13Z INFO ConfigurationStore] CredFilePath: D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.credentials
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 06:52:13Z INFO HostContext] Well known config file 'MigratedCredentials': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.credentials_migrated'
+[2024-03-21 06:52:13Z INFO ConfigurationStore] MigratedCredFilePath: D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.credentials_migrated
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 06:52:13Z INFO HostContext] Well known config file 'Service': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.service'
+[2024-03-21 06:52:13Z INFO ConfigurationStore] ServiceConfigFilePath: D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.service
+[2024-03-21 06:52:13Z INFO CommandSettings] Flag 'help': 'False'
+[2024-03-21 06:52:13Z INFO CommandSettings] Flag 'version': 'False'
+[2024-03-21 06:52:13Z INFO CommandSettings] Flag 'commit': 'False'
+[2024-03-21 06:52:13Z INFO CommandSettings] Flag 'check': 'False'
+[2024-03-21 06:52:13Z INFO CommandSettings] Command 'configure': 'False'
+[2024-03-21 06:52:13Z INFO CommandSettings] Command 'remove': 'False'
+[2024-03-21 06:52:13Z INFO CommandSettings] Command 'warmup': 'False'
+[2024-03-21 06:52:13Z INFO ConfigurationManager] LoadSettings
+[2024-03-21 06:52:13Z INFO ConfigurationStore] IsConfigured()
+[2024-03-21 06:52:13Z INFO ConfigurationStore] IsConfigured: True
+[2024-03-21 06:52:13Z INFO ConfigurationManager] Is configured: True
+[2024-03-21 06:52:13Z INFO ConfigurationStore] Read setting file: 315 chars
+[2024-03-21 06:52:13Z INFO ConfigurationManager] Settings Loaded
+[2024-03-21 06:52:13Z INFO ConfigurationStore] IsServiceConfigured()
+[2024-03-21 06:52:13Z INFO ConfigurationStore] IsServiceConfigured: False
+[2024-03-21 06:52:13Z INFO CommandSettings] Command 'run': 'True'
+[2024-03-21 06:52:13Z INFO ConfigurationStore] IsConfigured()
+[2024-03-21 06:52:13Z INFO ConfigurationStore] IsConfigured: True
+[2024-03-21 06:52:13Z INFO ConfigurationManager] Is configured: True
+[2024-03-21 06:52:13Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2024-03-21 06:52:13Z INFO Runner] Set runner startup type - Manual
+[2024-03-21 06:52:13Z INFO CommandSettings] Flag 'once': 'False'
+[2024-03-21 06:52:13Z INFO CommandSettings] Flag 'once': 'False'
+[2024-03-21 06:52:13Z INFO Runner] RunAsync
+[2024-03-21 06:52:13Z INFO ConfigurationManager] LoadSettings
+[2024-03-21 06:52:13Z INFO ConfigurationStore] IsConfigured()
+[2024-03-21 06:52:13Z INFO ConfigurationStore] IsConfigured: True
+[2024-03-21 06:52:13Z INFO ConfigurationManager] Is configured: True
+[2024-03-21 06:52:13Z INFO ConfigurationManager] Settings Loaded
+[2024-03-21 06:52:13Z INFO MessageListener] {
+  "AgentId": 22,
+  "AgentName": "ANASTASIA",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/",
+  "GitHubUrl": "https://github.com/AnastasiyaVasilevskaya/Kursach",
+  "WorkFolder": "_work"
+}
+[2024-03-21 06:52:13Z INFO MessageListener] Loading Credentials
+[2024-03-21 06:52:13Z INFO ConfigurationStore] HasCredentials()
+[2024-03-21 06:52:13Z INFO ConfigurationStore] stored True
+[2024-03-21 06:52:13Z INFO CredentialManager] GetCredentialProvider
+[2024-03-21 06:52:13Z INFO CredentialManager] Creating type OAuth
+[2024-03-21 06:52:13Z INFO CredentialManager] Creating credential type: OAuth
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 06:52:13Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 06:52:13Z INFO HostContext] Well known config file 'RSACredentials': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.credentials_rsaparams'
+[2024-03-21 06:52:13Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.credentials_rsaparams
+[2024-03-21 06:52:13Z INFO MessageListener] Attempt to create session.
+[2024-03-21 06:52:13Z INFO MessageListener] Connecting to the Runner Server...
+[2024-03-21 06:52:13Z INFO RunnerServer] EstablishVssConnection
+[2024-03-21 06:52:13Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2024-03-21 06:52:13Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2024-03-21 06:52:13Z INFO RunnerServer] EstablishVssConnection
+[2024-03-21 06:52:13Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2024-03-21 06:52:13Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2024-03-21 06:52:13Z INFO RunnerServer] EstablishVssConnection
+[2024-03-21 06:52:13Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2024-03-21 06:52:13Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2024-03-21 06:52:14Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2024-03-21 06:52:14Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2024-03-21 06:52:14Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2024-03-21 06:52:14Z INFO MessageListener] VssConnection created
+[2024-03-21 06:52:14Z INFO Terminal] WRITE LINE: 
+[2024-03-21 06:52:14Z INFO Terminal] WRITE LINE: 
+[2024-03-21 06:52:14Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.credentials_rsaparams
+[2024-03-21 06:52:14Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.credentials_rsaparams
+[2024-03-21 06:52:15Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2024-03-21 06:52:15Z INFO MessageListener] Session created.
+[2024-03-21 06:52:15Z INFO Terminal] WRITE LINE: Current runner version: '2.314.1'
+[2024-03-21 06:52:15Z INFO Terminal] WRITE LINE: 2024-03-21 06:52:15Z: Listening for Jobs
+[2024-03-21 06:52:15Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2024-03-21 06:53:05Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.credentials_rsaparams
+[2024-03-21 06:53:06Z INFO MessageListener] Message '1' received from session '40cd1b01-aedf-4528-8de6-a466305562cd'.
+[2024-03-21 06:53:06Z INFO Runner] Received job message of length 25152 from service, with hash '27e5e1c4f65d94ad2dbc0c2cd660bfe166a81fae5f71f5acad58a45b78e13594'
+[2024-03-21 06:53:06Z INFO JobDispatcher] Job request 27 for plan 9ced6a03-5f7c-49a7-af59-7f9c988db2bb job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-21 06:53:06Z INFO JobDispatcher] Pull OrchestrationId 9ced6a03-5f7c-49a7-af59-7f9c988db2bb.build.__default from JWT claims
+[2024-03-21 06:53:06Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-21 06:53:06Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-21 06:53:06Z INFO Terminal] WRITE LINE: 2024-03-21 06:53:06Z: Running job: build
+[2024-03-21 06:53:06Z INFO JobDispatcher] Start renew job request 27 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-21 06:53:06Z INFO JobDispatcher] Successfully renew job request 27, job is valid till 21.03.2024 07:03:04
+[2024-03-21 06:53:06Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 06:53:06Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-21 06:53:06Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin\Runner.Worker.exe'
+[2024-03-21 06:53:06Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1752 1296'
+[2024-03-21 06:53:06Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 06:53:06Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-21 06:53:06Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-21 06:53:06Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-21 06:53:06Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-21 06:53:06Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-21 06:53:06Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-21 06:53:06Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-21 06:53:06Z INFO ProcessInvokerWrapper] Process started with process id 2832, waiting for process exit.
+[2024-03-21 06:53:06Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-21 06:53:06Z INFO ProcessChannel] Sending message of length 25152, with hash '27e5e1c4f65d94ad2dbc0c2cd660bfe166a81fae5f71f5acad58a45b78e13594'
+[2024-03-21 06:53:06Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-21 06:53:06Z INFO JobNotification] Entering StartMonitor

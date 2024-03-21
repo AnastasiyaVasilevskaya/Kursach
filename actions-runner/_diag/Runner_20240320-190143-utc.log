@@ -1,0 +1,963 @@
+[2024-03-20 19:01:43Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2024-03-20 19:01:43Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:01:43Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner'
+[2024-03-20 19:01:43Z INFO HostContext] Well known config file 'Credentials': 'D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials'
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner'
+[2024-03-20 19:01:44Z INFO HostContext] Well known config file 'Runner': 'D:\Учёба\kursach\Dev-course\python\actions-runner\.runner'
+[2024-03-20 19:01:44Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2024-03-20 19:01:44Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.22000.
+[2024-03-20 19:01:44Z INFO Listener] Version: 2.314.1
+[2024-03-20 19:01:44Z INFO Listener] Commit: 976290d966e6cc3e748a49bf8fdbe139ff764201
+[2024-03-20 19:01:44Z INFO Listener] Culture: ru-BY
+[2024-03-20 19:01:44Z INFO Listener] UI Culture: ru-RU
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner'
+[2024-03-20 19:01:44Z INFO Listener] Validating directory permissions for: 'D:\Учёба\kursach\Dev-course\python\actions-runner'
+[2024-03-20 19:01:44Z INFO CommandLineParser] Parse
+[2024-03-20 19:01:44Z INFO CommandLineParser] Parsing 1 args
+[2024-03-20 19:01:44Z INFO CommandLineParser] parsing argument
+[2024-03-20 19:01:44Z INFO CommandLineParser] HasArgs: False
+[2024-03-20 19:01:44Z INFO CommandLineParser] Adding Command: run
+[2024-03-20 19:01:44Z INFO Listener] Arguments parsed
+[2024-03-20 19:01:44Z INFO Runner] ExecuteCommand
+[2024-03-20 19:01:44Z INFO ConfigurationStore] currentAssemblyLocation: D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Listener.dll
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:01:44Z INFO ConfigurationStore] binPath: D:\Учёба\kursach\Dev-course\python\actions-runner\bin
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner'
+[2024-03-20 19:01:44Z INFO ConfigurationStore] RootFolder: D:\Учёба\kursach\Dev-course\python\actions-runner
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner'
+[2024-03-20 19:01:44Z INFO HostContext] Well known config file 'Runner': 'D:\Учёба\kursach\Dev-course\python\actions-runner\.runner'
+[2024-03-20 19:01:44Z INFO ConfigurationStore] ConfigFilePath: D:\Учёба\kursach\Dev-course\python\actions-runner\.runner
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner'
+[2024-03-20 19:01:44Z INFO HostContext] Well known config file 'Credentials': 'D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials'
+[2024-03-20 19:01:44Z INFO ConfigurationStore] CredFilePath: D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner'
+[2024-03-20 19:01:44Z INFO HostContext] Well known config file 'MigratedCredentials': 'D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_migrated'
+[2024-03-20 19:01:44Z INFO ConfigurationStore] MigratedCredFilePath: D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_migrated
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner'
+[2024-03-20 19:01:44Z INFO HostContext] Well known config file 'Service': 'D:\Учёба\kursach\Dev-course\python\actions-runner\.service'
+[2024-03-20 19:01:44Z INFO ConfigurationStore] ServiceConfigFilePath: D:\Учёба\kursach\Dev-course\python\actions-runner\.service
+[2024-03-20 19:01:44Z INFO CommandSettings] Flag 'help': 'False'
+[2024-03-20 19:01:44Z INFO CommandSettings] Flag 'version': 'False'
+[2024-03-20 19:01:44Z INFO CommandSettings] Flag 'commit': 'False'
+[2024-03-20 19:01:44Z INFO CommandSettings] Flag 'check': 'False'
+[2024-03-20 19:01:44Z INFO CommandSettings] Command 'configure': 'False'
+[2024-03-20 19:01:44Z INFO CommandSettings] Command 'remove': 'False'
+[2024-03-20 19:01:44Z INFO CommandSettings] Command 'warmup': 'False'
+[2024-03-20 19:01:44Z INFO ConfigurationManager] LoadSettings
+[2024-03-20 19:01:44Z INFO ConfigurationStore] IsConfigured()
+[2024-03-20 19:01:44Z INFO ConfigurationStore] IsConfigured: True
+[2024-03-20 19:01:44Z INFO ConfigurationManager] Is configured: True
+[2024-03-20 19:01:44Z INFO ConfigurationStore] Read setting file: 315 chars
+[2024-03-20 19:01:44Z INFO ConfigurationManager] Settings Loaded
+[2024-03-20 19:01:44Z INFO ConfigurationStore] IsServiceConfigured()
+[2024-03-20 19:01:44Z INFO ConfigurationStore] IsServiceConfigured: False
+[2024-03-20 19:01:44Z INFO CommandSettings] Command 'run': 'True'
+[2024-03-20 19:01:44Z INFO ConfigurationStore] IsConfigured()
+[2024-03-20 19:01:44Z INFO ConfigurationStore] IsConfigured: True
+[2024-03-20 19:01:44Z INFO ConfigurationManager] Is configured: True
+[2024-03-20 19:01:44Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2024-03-20 19:01:44Z INFO Runner] Set runner startup type - Manual
+[2024-03-20 19:01:44Z INFO CommandSettings] Flag 'once': 'False'
+[2024-03-20 19:01:44Z INFO CommandSettings] Flag 'once': 'False'
+[2024-03-20 19:01:44Z INFO Runner] RunAsync
+[2024-03-20 19:01:44Z INFO ConfigurationManager] LoadSettings
+[2024-03-20 19:01:44Z INFO ConfigurationStore] IsConfigured()
+[2024-03-20 19:01:44Z INFO ConfigurationStore] IsConfigured: True
+[2024-03-20 19:01:44Z INFO ConfigurationManager] Is configured: True
+[2024-03-20 19:01:44Z INFO ConfigurationManager] Settings Loaded
+[2024-03-20 19:01:44Z INFO MessageListener] {
+  "AgentId": 21,
+  "AgentName": "ANASTASIA",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/",
+  "GitHubUrl": "https://github.com/AnastasiyaVasilevskaya/Kursach",
+  "WorkFolder": "_work"
+}
+[2024-03-20 19:01:44Z INFO MessageListener] Loading Credentials
+[2024-03-20 19:01:44Z INFO ConfigurationStore] HasCredentials()
+[2024-03-20 19:01:44Z INFO ConfigurationStore] stored True
+[2024-03-20 19:01:44Z INFO CredentialManager] GetCredentialProvider
+[2024-03-20 19:01:44Z INFO CredentialManager] Creating type OAuth
+[2024-03-20 19:01:44Z INFO CredentialManager] Creating credential type: OAuth
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:01:44Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner'
+[2024-03-20 19:01:44Z INFO HostContext] Well known config file 'RSACredentials': 'D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams'
+[2024-03-20 19:01:44Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 19:01:44Z INFO MessageListener] Attempt to create session.
+[2024-03-20 19:01:44Z INFO MessageListener] Connecting to the Runner Server...
+[2024-03-20 19:01:44Z INFO RunnerServer] EstablishVssConnection
+[2024-03-20 19:01:44Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2024-03-20 19:01:44Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2024-03-20 19:01:44Z INFO RunnerServer] EstablishVssConnection
+[2024-03-20 19:01:44Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2024-03-20 19:01:44Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2024-03-20 19:01:44Z INFO RunnerServer] EstablishVssConnection
+[2024-03-20 19:01:44Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2024-03-20 19:01:44Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2024-03-20 19:01:45Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2024-03-20 19:01:45Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2024-03-20 19:01:45Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2024-03-20 19:01:45Z INFO MessageListener] VssConnection created
+[2024-03-20 19:01:45Z INFO Terminal] WRITE LINE: 
+[2024-03-20 19:01:45Z INFO Terminal] WRITE LINE: 
+[2024-03-20 19:01:46Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 19:01:46Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 19:01:46Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2024-03-20 19:01:46Z INFO MessageListener] Session created.
+[2024-03-20 19:01:46Z INFO Terminal] WRITE LINE: Current runner version: '2.314.1'
+[2024-03-20 19:01:46Z INFO Terminal] WRITE LINE: 2024-03-20 19:01:46Z: Listening for Jobs
+[2024-03-20 19:01:46Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2024-03-20 19:22:18Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 19:22:18Z INFO MessageListener] Message '1' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 19:22:18Z INFO Runner] Received job message of length 24621 from service, with hash 'c805fddba09e1e6a6fd6e6111258d00bbeb6c3c0b32e16b19f902e52414408ce'
+[2024-03-20 19:22:19Z INFO JobDispatcher] Job request 6 for plan 46026f9e-8357-44e2-aac4-696637692181 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 19:22:19Z INFO JobDispatcher] Pull OrchestrationId 46026f9e-8357-44e2-aac4-696637692181.build.__default from JWT claims
+[2024-03-20 19:22:19Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 19:22:19Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 19:22:19Z INFO Terminal] WRITE LINE: 2024-03-20 19:22:19Z: Running job: build
+[2024-03-20 19:22:19Z INFO JobDispatcher] Start renew job request 6 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 19:22:20Z INFO JobDispatcher] Successfully renew job request 6, job is valid till 20.03.2024 19:32:19
+[2024-03-20 19:22:20Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:22:20Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 19:22:20Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 19:22:20Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1784 2224'
+[2024-03-20 19:22:20Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:22:20Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 19:22:20Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 19:22:20Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 19:22:20Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 19:22:20Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 19:22:20Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 19:22:20Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 19:22:20Z INFO ProcessInvokerWrapper] Process started with process id 9608, waiting for process exit.
+[2024-03-20 19:22:20Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 19:22:20Z INFO ProcessChannel] Sending message of length 24621, with hash 'c805fddba09e1e6a6fd6e6111258d00bbeb6c3c0b32e16b19f902e52414408ce'
+[2024-03-20 19:22:21Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 19:22:21Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 19:22:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 19:22:43Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 19:22:43Z INFO ProcessInvokerWrapper] Finished process 9608 with exit code 102, and elapsed time 00:00:23.2178012.
+[2024-03-20 19:22:43Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 19:22:43Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 19:22:43Z INFO Terminal] WRITE LINE: 2024-03-20 19:22:43Z: Job build completed with result: Failed
+[2024-03-20 19:22:43Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 19:22:43Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 6.
+[2024-03-20 19:22:43Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 19:22:43Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 19:22:43Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 19:22:43Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=1&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 19:22:43Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 19:23:38Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 19:23:38Z INFO MessageListener] Message '2' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 19:23:38Z INFO Runner] Received job message of length 24442 from service, with hash '9f8475c284f030f9853943df827ab8e081ecbf2e69d55358e783b2db147ecc10'
+[2024-03-20 19:23:38Z INFO JobDispatcher] Job request 7 for plan c63bd7d4-9c8d-42be-b318-30db4b794dd0 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 19:23:38Z INFO JobDispatcher] Pull OrchestrationId c63bd7d4-9c8d-42be-b318-30db4b794dd0.build.__default from JWT claims
+[2024-03-20 19:23:38Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 19:23:38Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 19:23:38Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 19:23:38Z INFO Terminal] WRITE LINE: 2024-03-20 19:23:38Z: Running job: build
+[2024-03-20 19:23:38Z INFO JobDispatcher] Start renew job request 7 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 19:23:39Z INFO JobDispatcher] Successfully renew job request 7, job is valid till 20.03.2024 19:33:38
+[2024-03-20 19:23:39Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:23:39Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 19:23:39Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 19:23:39Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2412 2420'
+[2024-03-20 19:23:39Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:23:39Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 19:23:39Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 19:23:39Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 19:23:39Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 19:23:39Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 19:23:39Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 19:23:39Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 19:23:39Z INFO ProcessInvokerWrapper] Process started with process id 6956, waiting for process exit.
+[2024-03-20 19:23:39Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 19:23:39Z INFO ProcessChannel] Sending message of length 24442, with hash '9f8475c284f030f9853943df827ab8e081ecbf2e69d55358e783b2db147ecc10'
+[2024-03-20 19:23:40Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 19:23:40Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 19:24:39Z INFO JobDispatcher] Successfully renew job request 7, job is valid till 20.03.2024 19:34:38
+[2024-03-20 19:25:40Z INFO JobDispatcher] Successfully renew job request 7, job is valid till 20.03.2024 19:35:38
+[2024-03-20 19:26:40Z INFO JobDispatcher] Successfully renew job request 7, job is valid till 20.03.2024 19:36:39
+[2024-03-20 19:26:42Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 19:26:42Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 19:26:42Z INFO ProcessInvokerWrapper] Finished process 6956 with exit code 102, and elapsed time 00:03:03.5054396.
+[2024-03-20 19:26:42Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 19:26:42Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 19:26:42Z INFO Terminal] WRITE LINE: 2024-03-20 19:26:42Z: Job build completed with result: Failed
+[2024-03-20 19:26:42Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 19:26:42Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 7.
+[2024-03-20 19:26:42Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 19:26:42Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 19:26:42Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 19:26:42Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=2&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 19:26:42Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 19:34:04Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 19:34:04Z INFO MessageListener] Message '3' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 19:34:04Z INFO Runner] Received job message of length 24429 from service, with hash '2a878ac8fd0dd730f889b27f244f1b67bf536825ce90fbca5d3cc02dd8f435af'
+[2024-03-20 19:34:04Z INFO JobDispatcher] Job request 8 for plan e06a7f82-bde4-4f80-a095-13ea33d302b9 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 19:34:04Z INFO JobDispatcher] Pull OrchestrationId e06a7f82-bde4-4f80-a095-13ea33d302b9.build.__default from JWT claims
+[2024-03-20 19:34:04Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 19:34:04Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 19:34:04Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 19:34:04Z INFO Terminal] WRITE LINE: 2024-03-20 19:34:04Z: Running job: build
+[2024-03-20 19:34:04Z INFO JobDispatcher] Start renew job request 8 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 19:34:05Z INFO JobDispatcher] Successfully renew job request 8, job is valid till 20.03.2024 19:44:04
+[2024-03-20 19:34:05Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:34:05Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 19:34:05Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 19:34:05Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1624 1348'
+[2024-03-20 19:34:05Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:34:05Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 19:34:05Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 19:34:05Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 19:34:05Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 19:34:05Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 19:34:05Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 19:34:05Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 19:34:05Z INFO ProcessInvokerWrapper] Process started with process id 17296, waiting for process exit.
+[2024-03-20 19:34:05Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 19:34:05Z INFO ProcessChannel] Sending message of length 24429, with hash '2a878ac8fd0dd730f889b27f244f1b67bf536825ce90fbca5d3cc02dd8f435af'
+[2024-03-20 19:34:06Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 19:34:06Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 19:35:05Z INFO JobDispatcher] Successfully renew job request 8, job is valid till 20.03.2024 19:45:04
+[2024-03-20 19:36:06Z INFO JobDispatcher] Successfully renew job request 8, job is valid till 20.03.2024 19:46:05
+[2024-03-20 19:37:06Z INFO JobDispatcher] Successfully renew job request 8, job is valid till 20.03.2024 19:47:05
+[2024-03-20 19:37:17Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 19:37:17Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 19:37:17Z INFO ProcessInvokerWrapper] Finished process 17296 with exit code 102, and elapsed time 00:03:11.8667592.
+[2024-03-20 19:37:17Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 19:37:17Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 19:37:17Z INFO Terminal] WRITE LINE: 2024-03-20 19:37:17Z: Job build completed with result: Failed
+[2024-03-20 19:37:17Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 19:37:17Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 8.
+[2024-03-20 19:37:17Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 19:37:17Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 19:37:17Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 19:37:17Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=3&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 19:37:17Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 19:40:00Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 19:40:00Z INFO MessageListener] Message '4' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 19:40:00Z INFO Runner] Received job message of length 24430 from service, with hash 'c165fec5a05415a667da7674dd7e4098e89659f4cef9de209db8eed234209c3d'
+[2024-03-20 19:40:00Z INFO JobDispatcher] Job request 9 for plan e785f57d-6278-42aa-aa91-d98687f6cbe8 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 19:40:00Z INFO JobDispatcher] Pull OrchestrationId e785f57d-6278-42aa-aa91-d98687f6cbe8.build.__default from JWT claims
+[2024-03-20 19:40:00Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 19:40:00Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 19:40:00Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 19:40:00Z INFO Terminal] WRITE LINE: 2024-03-20 19:40:00Z: Running job: build
+[2024-03-20 19:40:00Z INFO JobDispatcher] Start renew job request 9 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 19:40:02Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 20.03.2024 19:50:01
+[2024-03-20 19:40:02Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:40:02Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 19:40:02Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 19:40:02Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2604 2616'
+[2024-03-20 19:40:02Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:40:02Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 19:40:02Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 19:40:02Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 19:40:02Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 19:40:02Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 19:40:02Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 19:40:02Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 19:40:02Z INFO ProcessInvokerWrapper] Process started with process id 7120, waiting for process exit.
+[2024-03-20 19:40:02Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 19:40:02Z INFO ProcessChannel] Sending message of length 24430, with hash 'c165fec5a05415a667da7674dd7e4098e89659f4cef9de209db8eed234209c3d'
+[2024-03-20 19:40:03Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 19:40:03Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 19:41:02Z INFO JobDispatcher] Successfully renew job request 9, job is valid till 20.03.2024 19:51:01
+[2024-03-20 19:41:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 19:41:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 19:41:53Z INFO ProcessInvokerWrapper] Finished process 7120 with exit code 102, and elapsed time 00:01:50.8676457.
+[2024-03-20 19:41:53Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 19:41:53Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 19:41:53Z INFO Terminal] WRITE LINE: 2024-03-20 19:41:53Z: Job build completed with result: Failed
+[2024-03-20 19:41:53Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 19:41:53Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 9.
+[2024-03-20 19:41:53Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 19:41:53Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 19:41:53Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 19:41:53Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=4&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 19:41:53Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 19:52:35Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 19:52:35Z INFO MessageListener] Message '5' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 19:52:35Z INFO Runner] Received job message of length 24442 from service, with hash '1324ce7732b34d228b64266697d8728de754f4e04158fa545319bcb3b542f51e'
+[2024-03-20 19:52:35Z INFO JobDispatcher] Job request 10 for plan 800a709c-72fe-49b6-a6e6-419877a252d2 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 19:52:35Z INFO JobDispatcher] Pull OrchestrationId 800a709c-72fe-49b6-a6e6-419877a252d2.build.__default from JWT claims
+[2024-03-20 19:52:35Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 19:52:35Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 19:52:35Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 19:52:35Z INFO Terminal] WRITE LINE: 2024-03-20 19:52:35Z: Running job: build
+[2024-03-20 19:52:35Z INFO JobDispatcher] Start renew job request 10 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 19:52:36Z INFO JobDispatcher] Successfully renew job request 10, job is valid till 20.03.2024 20:02:35
+[2024-03-20 19:52:36Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:52:36Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 19:52:36Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 19:52:36Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2212 2536'
+[2024-03-20 19:52:36Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 19:52:36Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 19:52:36Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 19:52:36Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 19:52:36Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 19:52:36Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 19:52:36Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 19:52:36Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 19:52:36Z INFO ProcessInvokerWrapper] Process started with process id 15860, waiting for process exit.
+[2024-03-20 19:52:36Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 19:52:36Z INFO ProcessChannel] Sending message of length 24442, with hash '1324ce7732b34d228b64266697d8728de754f4e04158fa545319bcb3b542f51e'
+[2024-03-20 19:52:37Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 19:52:37Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 19:53:37Z INFO JobDispatcher] Successfully renew job request 10, job is valid till 20.03.2024 20:03:35
+[2024-03-20 19:53:39Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 19:53:39Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 19:53:39Z INFO ProcessInvokerWrapper] Finished process 15860 with exit code 102, and elapsed time 00:01:02.7152403.
+[2024-03-20 19:53:39Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 19:53:39Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 19:53:39Z INFO Terminal] WRITE LINE: 2024-03-20 19:53:39Z: Job build completed with result: Failed
+[2024-03-20 19:53:39Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 19:53:39Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 10.
+[2024-03-20 19:53:39Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 19:53:39Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 19:53:39Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 19:53:39Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=5&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 19:53:39Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 19:57:00Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 19:57:00Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2024-03-20 20:06:41Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 20:06:41Z INFO MessageListener] Message '6' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 20:06:41Z INFO Runner] Received job message of length 24436 from service, with hash '600c7ebd984d746845ffaef86e8e17957317388ad9bc23d253591851cfb6b016'
+[2024-03-20 20:06:41Z INFO JobDispatcher] Job request 11 for plan beec5b60-806b-4fc1-b8e4-64540fa57ad1 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 20:06:41Z INFO JobDispatcher] Pull OrchestrationId beec5b60-806b-4fc1-b8e4-64540fa57ad1.build.__default from JWT claims
+[2024-03-20 20:06:41Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 20:06:41Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 20:06:41Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 20:06:41Z INFO Terminal] WRITE LINE: 2024-03-20 20:06:41Z: Running job: build
+[2024-03-20 20:06:41Z INFO JobDispatcher] Start renew job request 11 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:06:41Z INFO JobDispatcher] Successfully renew job request 11, job is valid till 20.03.2024 20:16:40
+[2024-03-20 20:06:41Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 20:06:41Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 20:06:41Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 20:06:41Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2476 1776'
+[2024-03-20 20:06:41Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 20:06:41Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 20:06:41Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 20:06:41Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 20:06:41Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 20:06:41Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 20:06:41Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 20:06:41Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 20:06:41Z INFO ProcessInvokerWrapper] Process started with process id 15464, waiting for process exit.
+[2024-03-20 20:06:41Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:06:41Z INFO ProcessChannel] Sending message of length 24436, with hash '600c7ebd984d746845ffaef86e8e17957317388ad9bc23d253591851cfb6b016'
+[2024-03-20 20:06:42Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 20:06:42Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 20:07:42Z INFO JobDispatcher] Successfully renew job request 11, job is valid till 20.03.2024 20:17:41
+[2024-03-20 20:08:42Z INFO JobDispatcher] Successfully renew job request 11, job is valid till 20.03.2024 20:18:41
+[2024-03-20 20:09:37Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 20:09:37Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 20:09:37Z INFO ProcessInvokerWrapper] Finished process 15464 with exit code 102, and elapsed time 00:02:55.4241706.
+[2024-03-20 20:09:37Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 20:09:37Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 20:09:37Z INFO Terminal] WRITE LINE: 2024-03-20 20:09:37Z: Job build completed with result: Failed
+[2024-03-20 20:09:37Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:09:37Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 11.
+[2024-03-20 20:09:37Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 20:09:37Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 20:09:37Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 20:09:37Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=6&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 20:09:37Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 20:22:21Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 20:22:21Z INFO MessageListener] Message '7' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 20:22:21Z INFO Runner] Received job message of length 25298 from service, with hash '300e26495bf93b699e7b639963917f067f79983055e1a03eb1a9bd73eae82ffe'
+[2024-03-20 20:22:21Z INFO JobDispatcher] Job request 12 for plan b5c5389c-bc44-42ab-bc1f-f2f80af49092 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 20:22:21Z INFO JobDispatcher] Pull OrchestrationId b5c5389c-bc44-42ab-bc1f-f2f80af49092.build.__default from JWT claims
+[2024-03-20 20:22:21Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 20:22:21Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 20:22:21Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 20:22:21Z INFO Terminal] WRITE LINE: 2024-03-20 20:22:21Z: Running job: build
+[2024-03-20 20:22:21Z INFO JobDispatcher] Start renew job request 12 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:22:22Z INFO JobDispatcher] Successfully renew job request 12, job is valid till 20.03.2024 20:32:21
+[2024-03-20 20:22:22Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 20:22:22Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 20:22:22Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 20:22:22Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2404 1936'
+[2024-03-20 20:22:22Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 20:22:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 20:22:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 20:22:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 20:22:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 20:22:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 20:22:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 20:22:22Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 20:22:22Z INFO ProcessInvokerWrapper] Process started with process id 7144, waiting for process exit.
+[2024-03-20 20:22:22Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:22:22Z INFO ProcessChannel] Sending message of length 25298, with hash '300e26495bf93b699e7b639963917f067f79983055e1a03eb1a9bd73eae82ffe'
+[2024-03-20 20:22:22Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 20:22:22Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 20:23:22Z INFO JobDispatcher] Successfully renew job request 12, job is valid till 20.03.2024 20:33:21
+[2024-03-20 20:24:22Z INFO JobDispatcher] Successfully renew job request 12, job is valid till 20.03.2024 20:34:21
+[2024-03-20 20:24:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 20:24:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 20:24:31Z INFO ProcessInvokerWrapper] Finished process 7144 with exit code 102, and elapsed time 00:02:09.1981321.
+[2024-03-20 20:24:31Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 20:24:31Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 20:24:31Z INFO Terminal] WRITE LINE: 2024-03-20 20:24:31Z: Job build completed with result: Failed
+[2024-03-20 20:24:31Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:24:31Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 12.
+[2024-03-20 20:24:31Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 20:24:31Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 20:24:31Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 20:24:31Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=7&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 20:24:31Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 20:29:05Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 20:29:05Z INFO MessageListener] Message '8' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 20:29:05Z INFO Runner] Received job message of length 25297 from service, with hash '42460a6cd8c8aa7248bacec6723bf9bbb908e77d46396e3815341ba76da5a7ca'
+[2024-03-20 20:29:05Z INFO JobDispatcher] Job request 13 for plan f7836ea5-9352-4053-8f41-9dcaf1f984b0 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 20:29:05Z INFO JobDispatcher] Pull OrchestrationId f7836ea5-9352-4053-8f41-9dcaf1f984b0.build.__default from JWT claims
+[2024-03-20 20:29:05Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 20:29:05Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 20:29:05Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 20:29:05Z INFO Terminal] WRITE LINE: 2024-03-20 20:29:05Z: Running job: build
+[2024-03-20 20:29:05Z INFO JobDispatcher] Start renew job request 13 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:29:06Z INFO JobDispatcher] Successfully renew job request 13, job is valid till 20.03.2024 20:39:05
+[2024-03-20 20:29:06Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 20:29:06Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 20:29:06Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 20:29:06Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1692 1640'
+[2024-03-20 20:29:06Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 20:29:06Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 20:29:06Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 20:29:06Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 20:29:06Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 20:29:06Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 20:29:06Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 20:29:06Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 20:29:06Z INFO ProcessInvokerWrapper] Process started with process id 14040, waiting for process exit.
+[2024-03-20 20:29:06Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:29:06Z INFO ProcessChannel] Sending message of length 25297, with hash '42460a6cd8c8aa7248bacec6723bf9bbb908e77d46396e3815341ba76da5a7ca'
+[2024-03-20 20:29:06Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 20:29:06Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 20:29:30Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 20:29:30Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 20:29:30Z INFO ProcessInvokerWrapper] Finished process 14040 with exit code 102, and elapsed time 00:00:24.3317777.
+[2024-03-20 20:29:30Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 20:29:30Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 20:29:30Z INFO Terminal] WRITE LINE: 2024-03-20 20:29:30Z: Job build completed with result: Failed
+[2024-03-20 20:29:30Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:29:30Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 13.
+[2024-03-20 20:29:30Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 20:29:30Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 20:29:30Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 20:29:30Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=8&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 20:29:30Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 20:31:49Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 20:31:49Z INFO MessageListener] Message '9' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 20:31:49Z INFO Runner] Received job message of length 24863 from service, with hash '68c1742e94df5b1f3f7525deca64c6399f10d966608b467c01403579617e7e59'
+[2024-03-20 20:31:49Z INFO JobDispatcher] Job request 14 for plan cfdbaa86-e47f-4d25-a95e-6b1e42c430ea job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 20:31:49Z INFO JobDispatcher] Pull OrchestrationId cfdbaa86-e47f-4d25-a95e-6b1e42c430ea.build.__default from JWT claims
+[2024-03-20 20:31:49Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 20:31:49Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 20:31:49Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 20:31:49Z INFO Terminal] WRITE LINE: 2024-03-20 20:31:49Z: Running job: build
+[2024-03-20 20:31:49Z INFO JobDispatcher] Start renew job request 14 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:31:50Z INFO JobDispatcher] Successfully renew job request 14, job is valid till 20.03.2024 20:41:49
+[2024-03-20 20:31:50Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 20:31:50Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 20:31:50Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 20:31:50Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1288 2448'
+[2024-03-20 20:31:50Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 20:31:50Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 20:31:50Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 20:31:50Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 20:31:50Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 20:31:50Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 20:31:50Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 20:31:50Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 20:31:50Z INFO ProcessInvokerWrapper] Process started with process id 8600, waiting for process exit.
+[2024-03-20 20:31:50Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:31:50Z INFO ProcessChannel] Sending message of length 24863, with hash '68c1742e94df5b1f3f7525deca64c6399f10d966608b467c01403579617e7e59'
+[2024-03-20 20:31:50Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 20:31:50Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 20:32:12Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 20:32:12Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 20:32:12Z INFO ProcessInvokerWrapper] Finished process 8600 with exit code 102, and elapsed time 00:00:22.4505183.
+[2024-03-20 20:32:12Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 20:32:12Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 20:32:12Z INFO Terminal] WRITE LINE: 2024-03-20 20:32:12Z: Job build completed with result: Failed
+[2024-03-20 20:32:12Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:32:12Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 14.
+[2024-03-20 20:32:12Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 20:32:12Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 20:32:12Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 20:32:12Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=9&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 20:32:12Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 20:42:17Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 20:42:17Z INFO MessageListener] Message '10' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 20:42:17Z INFO Runner] Received job message of length 24846 from service, with hash 'a2d5d63fb89bad7a35a1d2604876afead4a91a0166f958841a6974cd5eff71e0'
+[2024-03-20 20:42:17Z INFO JobDispatcher] Job request 15 for plan 7936008c-2a57-457f-a30d-ad6c106d1713 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 20:42:17Z INFO JobDispatcher] Pull OrchestrationId 7936008c-2a57-457f-a30d-ad6c106d1713.build.__default from JWT claims
+[2024-03-20 20:42:17Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 20:42:17Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 20:42:17Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 20:42:17Z INFO Terminal] WRITE LINE: 2024-03-20 20:42:17Z: Running job: build
+[2024-03-20 20:42:17Z INFO JobDispatcher] Start renew job request 15 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:42:17Z INFO JobDispatcher] Successfully renew job request 15, job is valid till 20.03.2024 20:52:16
+[2024-03-20 20:42:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 20:42:17Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 20:42:17Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 20:42:17Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2312 2464'
+[2024-03-20 20:42:17Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 20:42:17Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 20:42:17Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 20:42:17Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 20:42:17Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 20:42:17Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 20:42:17Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 20:42:17Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 20:42:17Z INFO ProcessInvokerWrapper] Process started with process id 18968, waiting for process exit.
+[2024-03-20 20:42:17Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:42:17Z INFO ProcessChannel] Sending message of length 24846, with hash 'a2d5d63fb89bad7a35a1d2604876afead4a91a0166f958841a6974cd5eff71e0'
+[2024-03-20 20:42:18Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 20:42:18Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 20:42:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 20:42:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 20:42:38Z INFO ProcessInvokerWrapper] Finished process 18968 with exit code 102, and elapsed time 00:00:20.8815391.
+[2024-03-20 20:42:38Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 20:42:38Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 20:42:38Z INFO Terminal] WRITE LINE: 2024-03-20 20:42:38Z: Job build completed with result: Failed
+[2024-03-20 20:42:38Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:42:38Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 15.
+[2024-03-20 20:42:38Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 20:42:38Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 20:42:38Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 20:42:38Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=10&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 20:42:38Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 20:52:40Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 20:52:40Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2024-03-20 20:59:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 20:59:03Z INFO MessageListener] Message '11' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 20:59:03Z INFO Runner] Received job message of length 24845 from service, with hash 'f6953d521720cf0b5f91bb9e910f05798b7e43aae31c2a4b92cab95c80cf3b9e'
+[2024-03-20 20:59:03Z INFO JobDispatcher] Job request 16 for plan 4e3b2134-ebdb-4138-b3d7-d6e869fc0058 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 20:59:03Z INFO JobDispatcher] Pull OrchestrationId 4e3b2134-ebdb-4138-b3d7-d6e869fc0058.build.__default from JWT claims
+[2024-03-20 20:59:03Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 20:59:03Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 20:59:03Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 20:59:03Z INFO Terminal] WRITE LINE: 2024-03-20 20:59:03Z: Running job: build
+[2024-03-20 20:59:03Z INFO JobDispatcher] Start renew job request 16 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:59:04Z INFO JobDispatcher] Successfully renew job request 16, job is valid till 20.03.2024 21:09:03
+[2024-03-20 20:59:04Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 20:59:04Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 20:59:04Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 20:59:04Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2268 1624'
+[2024-03-20 20:59:04Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 20:59:04Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 20:59:04Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 20:59:04Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 20:59:04Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 20:59:04Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 20:59:04Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 20:59:04Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 20:59:04Z INFO ProcessInvokerWrapper] Process started with process id 16828, waiting for process exit.
+[2024-03-20 20:59:04Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:59:04Z INFO ProcessChannel] Sending message of length 24845, with hash 'f6953d521720cf0b5f91bb9e910f05798b7e43aae31c2a4b92cab95c80cf3b9e'
+[2024-03-20 20:59:04Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 20:59:04Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 20:59:26Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 20:59:26Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 20:59:26Z INFO ProcessInvokerWrapper] Finished process 16828 with exit code 102, and elapsed time 00:00:22.2103315.
+[2024-03-20 20:59:26Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 20:59:26Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 20:59:26Z INFO Terminal] WRITE LINE: 2024-03-20 20:59:26Z: Job build completed with result: Failed
+[2024-03-20 20:59:26Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 20:59:26Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 16.
+[2024-03-20 20:59:26Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 20:59:26Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 20:59:26Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 20:59:26Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=11&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 20:59:26Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 21:01:00Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 21:01:00Z INFO MessageListener] Message '12' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 21:01:00Z INFO Runner] Received job message of length 24846 from service, with hash '90e388e1dcd8c675ff5ea154cb2ee23383d23b259f4d2bbf966e35d90074b016'
+[2024-03-20 21:01:00Z INFO JobDispatcher] Job request 17 for plan a72a474f-6c09-48f6-bfed-01459208fe08 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 21:01:00Z INFO JobDispatcher] Pull OrchestrationId a72a474f-6c09-48f6-bfed-01459208fe08.build.__default from JWT claims
+[2024-03-20 21:01:00Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 21:01:00Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 21:01:00Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 21:01:00Z INFO Terminal] WRITE LINE: 2024-03-20 21:01:00Z: Running job: build
+[2024-03-20 21:01:00Z INFO JobDispatcher] Start renew job request 17 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:01:00Z INFO JobDispatcher] Successfully renew job request 17, job is valid till 20.03.2024 21:10:59
+[2024-03-20 21:01:00Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:01:00Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 21:01:00Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 21:01:00Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2776 2292'
+[2024-03-20 21:01:00Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:01:00Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 21:01:00Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 21:01:00Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 21:01:00Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 21:01:00Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 21:01:00Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 21:01:00Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 21:01:00Z INFO ProcessInvokerWrapper] Process started with process id 16460, waiting for process exit.
+[2024-03-20 21:01:00Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:01:00Z INFO ProcessChannel] Sending message of length 24846, with hash '90e388e1dcd8c675ff5ea154cb2ee23383d23b259f4d2bbf966e35d90074b016'
+[2024-03-20 21:01:00Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 21:01:00Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 21:01:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:01:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:01:21Z INFO ProcessInvokerWrapper] Finished process 16460 with exit code 102, and elapsed time 00:00:21.2664069.
+[2024-03-20 21:01:21Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 21:01:21Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 21:01:21Z INFO Terminal] WRITE LINE: 2024-03-20 21:01:21Z: Job build completed with result: Failed
+[2024-03-20 21:01:21Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:01:21Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 17.
+[2024-03-20 21:01:21Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 21:01:21Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 21:01:21Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 21:01:21Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=12&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 21:01:21Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 21:02:12Z WARN GitHubActionsService] Attempt 1 of GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=12&status=Online&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false failed (Socket Error: ConnectionReset). The operation will be retried in 10,824 seconds.
+[2024-03-20 21:24:02Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 21:24:02Z INFO MessageListener] Message '13' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 21:24:02Z INFO Runner] Received job message of length 23963 from service, with hash 'c0b1d5881b07f3f59ca0b70c9b74dc08baa346ac0132c3a989d77416b907442f'
+[2024-03-20 21:24:02Z INFO JobDispatcher] Job request 18 for plan 2332d83d-ba76-491c-8d06-7807a6ffd91e job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 21:24:02Z INFO JobDispatcher] Pull OrchestrationId 2332d83d-ba76-491c-8d06-7807a6ffd91e.build.__default from JWT claims
+[2024-03-20 21:24:02Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 21:24:02Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 21:24:02Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 21:24:02Z INFO Terminal] WRITE LINE: 2024-03-20 21:24:02Z: Running job: build
+[2024-03-20 21:24:02Z INFO JobDispatcher] Start renew job request 18 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:24:03Z INFO JobDispatcher] Successfully renew job request 18, job is valid till 20.03.2024 21:34:02
+[2024-03-20 21:24:03Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:24:03Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 21:24:03Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 21:24:03Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1940 2352'
+[2024-03-20 21:24:03Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:24:03Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 21:24:03Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 21:24:03Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 21:24:03Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 21:24:03Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 21:24:03Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 21:24:03Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 21:24:03Z INFO ProcessInvokerWrapper] Process started with process id 18976, waiting for process exit.
+[2024-03-20 21:24:03Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:24:03Z INFO ProcessChannel] Sending message of length 23963, with hash 'c0b1d5881b07f3f59ca0b70c9b74dc08baa346ac0132c3a989d77416b907442f'
+[2024-03-20 21:24:03Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 21:24:03Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 21:24:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:24:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:24:24Z INFO ProcessInvokerWrapper] Finished process 18976 with exit code 102, and elapsed time 00:00:21.3039608.
+[2024-03-20 21:24:24Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 21:24:24Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 21:24:24Z INFO Terminal] WRITE LINE: 2024-03-20 21:24:24Z: Job build completed with result: Failed
+[2024-03-20 21:24:24Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:24:24Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 18.
+[2024-03-20 21:24:24Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 21:24:24Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 21:24:24Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 21:24:24Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=13&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 21:24:24Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 21:26:10Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 21:26:10Z INFO MessageListener] Message '14' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 21:26:10Z INFO Runner] Received job message of length 23952 from service, with hash 'c5efddde8f26804a80ae76eb6c63ea9d90511c04d2ca6b7664bc49c885048298'
+[2024-03-20 21:26:10Z INFO JobDispatcher] Job request 19 for plan 2380ca65-44a1-4a0a-b3b0-0b3c4ac3566c job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 21:26:10Z INFO JobDispatcher] Pull OrchestrationId 2380ca65-44a1-4a0a-b3b0-0b3c4ac3566c.build.__default from JWT claims
+[2024-03-20 21:26:10Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 21:26:10Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 21:26:10Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 21:26:10Z INFO Terminal] WRITE LINE: 2024-03-20 21:26:10Z: Running job: build
+[2024-03-20 21:26:10Z INFO JobDispatcher] Start renew job request 19 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:26:11Z INFO JobDispatcher] Successfully renew job request 19, job is valid till 20.03.2024 21:36:10
+[2024-03-20 21:26:11Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:26:11Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 21:26:11Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 21:26:11Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2724 2472'
+[2024-03-20 21:26:11Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:26:11Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 21:26:11Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 21:26:11Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 21:26:11Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 21:26:11Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 21:26:11Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 21:26:11Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 21:26:11Z INFO ProcessInvokerWrapper] Process started with process id 13868, waiting for process exit.
+[2024-03-20 21:26:11Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:26:11Z INFO ProcessChannel] Sending message of length 23952, with hash 'c5efddde8f26804a80ae76eb6c63ea9d90511c04d2ca6b7664bc49c885048298'
+[2024-03-20 21:26:12Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 21:26:12Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 21:26:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:26:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:26:38Z INFO ProcessInvokerWrapper] Finished process 13868 with exit code 102, and elapsed time 00:00:26.9621699.
+[2024-03-20 21:26:38Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 21:26:38Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 21:26:38Z INFO Terminal] WRITE LINE: 2024-03-20 21:26:38Z: Job build completed with result: Failed
+[2024-03-20 21:26:38Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:26:38Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 19.
+[2024-03-20 21:26:38Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 21:26:38Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 21:26:38Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 21:26:38Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=14&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 21:26:38Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 21:33:08Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 21:33:08Z INFO MessageListener] Message '15' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 21:33:08Z INFO Runner] Received job message of length 23952 from service, with hash '3c14439cac35845107b8cbed35dd55937f8bf97afe61a6522c283ebee2e90b4a'
+[2024-03-20 21:33:08Z INFO JobDispatcher] Job request 20 for plan fdf265d2-709a-4646-9b7e-de4844700356 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 21:33:08Z INFO JobDispatcher] Pull OrchestrationId fdf265d2-709a-4646-9b7e-de4844700356.build.__default from JWT claims
+[2024-03-20 21:33:08Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 21:33:08Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 21:33:08Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 21:33:08Z INFO Terminal] WRITE LINE: 2024-03-20 21:33:08Z: Running job: build
+[2024-03-20 21:33:08Z INFO JobDispatcher] Start renew job request 20 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:33:09Z INFO JobDispatcher] Successfully renew job request 20, job is valid till 20.03.2024 21:43:08
+[2024-03-20 21:33:09Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:33:09Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 21:33:09Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 21:33:09Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1428 2348'
+[2024-03-20 21:33:09Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:33:09Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 21:33:09Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 21:33:09Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 21:33:09Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 21:33:09Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 21:33:09Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 21:33:09Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 21:33:09Z INFO ProcessInvokerWrapper] Process started with process id 6736, waiting for process exit.
+[2024-03-20 21:33:09Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:33:09Z INFO ProcessChannel] Sending message of length 23952, with hash '3c14439cac35845107b8cbed35dd55937f8bf97afe61a6522c283ebee2e90b4a'
+[2024-03-20 21:33:10Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 21:33:10Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 21:33:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:33:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:33:31Z INFO ProcessInvokerWrapper] Finished process 6736 with exit code 102, and elapsed time 00:00:22.5397863.
+[2024-03-20 21:33:31Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 21:33:31Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 21:33:31Z INFO Terminal] WRITE LINE: 2024-03-20 21:33:31Z: Job build completed with result: Failed
+[2024-03-20 21:33:31Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:33:31Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 20.
+[2024-03-20 21:33:31Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 21:33:31Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 21:33:31Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 21:33:31Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=15&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 21:33:31Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 21:35:01Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 21:35:01Z INFO MessageListener] Message '16' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 21:35:01Z INFO Runner] Received job message of length 23952 from service, with hash '1bb7caeb2f9917ef06eb93c66ff8cda437ac940e370304517f2ef165ceb291ca'
+[2024-03-20 21:35:01Z INFO JobDispatcher] Job request 21 for plan 3e7321a2-836b-4209-b7cd-2a86e07c0e60 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 21:35:01Z INFO JobDispatcher] Pull OrchestrationId 3e7321a2-836b-4209-b7cd-2a86e07c0e60.build.__default from JWT claims
+[2024-03-20 21:35:01Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 21:35:01Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 21:35:01Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 21:35:01Z INFO Terminal] WRITE LINE: 2024-03-20 21:35:01Z: Running job: build
+[2024-03-20 21:35:01Z INFO JobDispatcher] Start renew job request 21 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:35:02Z INFO JobDispatcher] Successfully renew job request 21, job is valid till 20.03.2024 21:45:01
+[2024-03-20 21:35:02Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:35:02Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 21:35:02Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 21:35:02Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1568 1648'
+[2024-03-20 21:35:02Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:35:02Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 21:35:02Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 21:35:02Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 21:35:02Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 21:35:02Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 21:35:02Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 21:35:02Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 21:35:02Z INFO ProcessInvokerWrapper] Process started with process id 16464, waiting for process exit.
+[2024-03-20 21:35:02Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:35:02Z INFO ProcessChannel] Sending message of length 23952, with hash '1bb7caeb2f9917ef06eb93c66ff8cda437ac940e370304517f2ef165ceb291ca'
+[2024-03-20 21:35:02Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 21:35:02Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 21:35:25Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:35:25Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:35:25Z INFO ProcessInvokerWrapper] Finished process 16464 with exit code 102, and elapsed time 00:00:22.7721667.
+[2024-03-20 21:35:25Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 21:35:25Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 21:35:25Z INFO Terminal] WRITE LINE: 2024-03-20 21:35:25Z: Job build completed with result: Failed
+[2024-03-20 21:35:25Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:35:25Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 21.
+[2024-03-20 21:35:25Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 21:35:25Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 21:35:25Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 21:35:25Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=16&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 21:35:25Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 21:42:54Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 21:42:54Z INFO MessageListener] Message '17' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 21:42:54Z INFO Runner] Received job message of length 23951 from service, with hash 'dae560c72de9ec8b5819a3d73207e44586f451f22f5d7cc8d0e0fa3400a8d6aa'
+[2024-03-20 21:42:54Z INFO JobDispatcher] Job request 22 for plan 50389a0e-a9bb-4dd3-a019-f04aece3ca1a job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 21:42:54Z INFO JobDispatcher] Pull OrchestrationId 50389a0e-a9bb-4dd3-a019-f04aece3ca1a.build.__default from JWT claims
+[2024-03-20 21:42:54Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 21:42:54Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 21:42:54Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 21:42:54Z INFO Terminal] WRITE LINE: 2024-03-20 21:42:54Z: Running job: build
+[2024-03-20 21:42:54Z INFO JobDispatcher] Start renew job request 22 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:42:55Z INFO JobDispatcher] Successfully renew job request 22, job is valid till 20.03.2024 21:52:54
+[2024-03-20 21:42:55Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:42:55Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 21:42:55Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 21:42:55Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1656 2152'
+[2024-03-20 21:42:55Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:42:55Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 21:42:55Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 21:42:55Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 21:42:55Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 21:42:55Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 21:42:55Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 21:42:55Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 21:42:55Z INFO ProcessInvokerWrapper] Process started with process id 10216, waiting for process exit.
+[2024-03-20 21:42:55Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:42:55Z INFO ProcessChannel] Sending message of length 23951, with hash 'dae560c72de9ec8b5819a3d73207e44586f451f22f5d7cc8d0e0fa3400a8d6aa'
+[2024-03-20 21:42:55Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 21:42:55Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 21:43:16Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:43:16Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:43:16Z INFO ProcessInvokerWrapper] Finished process 10216 with exit code 102, and elapsed time 00:00:21.4818147.
+[2024-03-20 21:43:16Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 21:43:16Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 21:43:16Z INFO Terminal] WRITE LINE: 2024-03-20 21:43:16Z: Job build completed with result: Failed
+[2024-03-20 21:43:16Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:43:16Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 22.
+[2024-03-20 21:43:16Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 21:43:16Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 21:43:16Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 21:43:16Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=17&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 21:43:16Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 21:44:32Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 21:44:32Z INFO MessageListener] Message '18' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 21:44:32Z INFO Runner] Received job message of length 23951 from service, with hash '98f6427da34bd3075c16066f9ecda142e924d1b4aa5094c0c0889d9a3fcf80d7'
+[2024-03-20 21:44:32Z INFO JobDispatcher] Job request 23 for plan 973b3642-abf8-4c91-a453-dcb8c9ac717d job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 21:44:32Z INFO JobDispatcher] Pull OrchestrationId 973b3642-abf8-4c91-a453-dcb8c9ac717d.build.__default from JWT claims
+[2024-03-20 21:44:32Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 21:44:32Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 21:44:32Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 21:44:32Z INFO Terminal] WRITE LINE: 2024-03-20 21:44:32Z: Running job: build
+[2024-03-20 21:44:32Z INFO JobDispatcher] Start renew job request 23 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:44:33Z INFO JobDispatcher] Successfully renew job request 23, job is valid till 20.03.2024 21:54:32
+[2024-03-20 21:44:33Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:44:33Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 21:44:33Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 21:44:33Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2608 2272'
+[2024-03-20 21:44:33Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:44:33Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 21:44:33Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 21:44:33Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 21:44:33Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 21:44:33Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 21:44:33Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 21:44:33Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 21:44:33Z INFO ProcessInvokerWrapper] Process started with process id 17836, waiting for process exit.
+[2024-03-20 21:44:33Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:44:33Z INFO ProcessChannel] Sending message of length 23951, with hash '98f6427da34bd3075c16066f9ecda142e924d1b4aa5094c0c0889d9a3fcf80d7'
+[2024-03-20 21:44:33Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 21:44:33Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 21:45:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:45:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:45:24Z INFO ProcessInvokerWrapper] Finished process 17836 with exit code 102, and elapsed time 00:00:51.5838875.
+[2024-03-20 21:45:24Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 21:45:24Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 21:45:24Z INFO Terminal] WRITE LINE: 2024-03-20 21:45:24Z: Job build completed with result: Failed
+[2024-03-20 21:45:24Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:45:24Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 23.
+[2024-03-20 21:45:24Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 21:45:24Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 21:45:24Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 21:45:24Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=18&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 21:45:24Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 21:46:06Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 21:46:06Z INFO MessageListener] Message '19' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 21:46:06Z INFO Runner] Received job message of length 23951 from service, with hash '18604fea626fba14fbd9a988e954f28a8663d516747bff24f7f29fe1c854e827'
+[2024-03-20 21:46:06Z INFO JobDispatcher] Job request 24 for plan e1765a1a-f411-4bda-ad71-e138852164c3 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 21:46:06Z INFO JobDispatcher] Pull OrchestrationId e1765a1a-f411-4bda-ad71-e138852164c3.build.__default from JWT claims
+[2024-03-20 21:46:06Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 21:46:06Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 21:46:06Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 21:46:06Z INFO Terminal] WRITE LINE: 2024-03-20 21:46:06Z: Running job: build
+[2024-03-20 21:46:06Z INFO JobDispatcher] Start renew job request 24 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:46:06Z INFO JobDispatcher] Successfully renew job request 24, job is valid till 20.03.2024 21:56:05
+[2024-03-20 21:46:06Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:46:06Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 21:46:06Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 21:46:06Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2628 1484'
+[2024-03-20 21:46:06Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:46:06Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 21:46:06Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 21:46:06Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 21:46:06Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 21:46:06Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 21:46:06Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 21:46:06Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 21:46:06Z INFO ProcessInvokerWrapper] Process started with process id 2596, waiting for process exit.
+[2024-03-20 21:46:06Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:46:06Z INFO ProcessChannel] Sending message of length 23951, with hash '18604fea626fba14fbd9a988e954f28a8663d516747bff24f7f29fe1c854e827'
+[2024-03-20 21:46:07Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 21:46:07Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 21:46:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:46:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:46:29Z INFO ProcessInvokerWrapper] Finished process 2596 with exit code 102, and elapsed time 00:00:22.7727006.
+[2024-03-20 21:46:29Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 21:46:29Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 21:46:29Z INFO Terminal] WRITE LINE: 2024-03-20 21:46:29Z: Job build completed with result: Failed
+[2024-03-20 21:46:29Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:46:29Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 24.
+[2024-03-20 21:46:29Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 21:46:29Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 21:46:29Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 21:46:29Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=19&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 21:46:29Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 21:48:10Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 21:48:10Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2024-03-20 21:51:47Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\Учёба\kursach\Dev-course\python\actions-runner\.credentials_rsaparams
+[2024-03-20 21:51:47Z INFO MessageListener] Message '20' received from session 'd9dcbf33-474e-4123-a310-060fc7ccc54d'.
+[2024-03-20 21:51:47Z INFO Runner] Received job message of length 23936 from service, with hash '2e64e72d32adcff91a69310306c01b43cc82715000acad0526ada4d86326e979'
+[2024-03-20 21:51:47Z INFO JobDispatcher] Job request 25 for plan dc7fd7f3-c553-4fe4-9de6-a63a271d7943 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2024-03-20 21:51:47Z INFO JobDispatcher] Pull OrchestrationId dc7fd7f3-c553-4fe4-9de6-a63a271d7943.build.__default from JWT claims
+[2024-03-20 21:51:47Z INFO MessageListener] Received job status event. JobState: Busy
+[2024-03-20 21:51:47Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2024-03-20 21:51:47Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 21:51:47Z INFO Terminal] WRITE LINE: 2024-03-20 21:51:47Z: Running job: build
+[2024-03-20 21:51:47Z INFO JobDispatcher] Start renew job request 25 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:51:48Z INFO JobDispatcher] Successfully renew job request 25, job is valid till 20.03.2024 22:01:47
+[2024-03-20 21:51:48Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:51:48Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-20 21:51:48Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin\Runner.Worker.exe'
+[2024-03-20 21:51:48Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1544 2472'
+[2024-03-20 21:51:48Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\bin'
+[2024-03-20 21:51:48Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-20 21:51:48Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-20 21:51:48Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2024-03-20 21:51:48Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-20 21:51:48Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2024-03-20 21:51:48Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-20 21:51:48Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2024-03-20 21:51:48Z INFO ProcessInvokerWrapper] Process started with process id 9700, waiting for process exit.
+[2024-03-20 21:51:48Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:51:48Z INFO ProcessChannel] Sending message of length 23936, with hash '2e64e72d32adcff91a69310306c01b43cc82715000acad0526ada4d86326e979'
+[2024-03-20 21:51:48Z INFO JobNotification] Entering JobStarted Notification
+[2024-03-20 21:51:48Z INFO JobNotification] Entering StartMonitor
+[2024-03-20 21:52:08Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:52:08Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-20 21:52:08Z INFO ProcessInvokerWrapper] Finished process 9700 with exit code 102, and elapsed time 00:00:20.6223559.
+[2024-03-20 21:52:08Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 102
+[2024-03-20 21:52:08Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Failed
+[2024-03-20 21:52:08Z INFO Terminal] WRITE LINE: 2024-03-20 21:52:08Z: Job build completed with result: Failed
+[2024-03-20 21:52:08Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2024-03-20 21:52:08Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 25.
+[2024-03-20 21:52:08Z INFO JobNotification] Entering JobCompleted Notification
+[2024-03-20 21:52:08Z INFO JobNotification] Entering EndMonitor
+[2024-03-20 21:52:08Z INFO MessageListener] Received job status event. JobState: Online
+[2024-03-20 21:52:08Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=20&status=Busy&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 21:52:08Z INFO MessageListener] Get messages has been cancelled using local token source. Continue to get messages with new status.
+[2024-03-20 22:00:14Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2024-03-20 22:00:14Z WARN GitHubActionsService] GET request to https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/_apis/distributedtask/pools/1/messages?sessionId=d9dcbf33-474e-4123-a310-060fc7ccc54d&lastMessageId=20&status=Online&runnerVersion=2.314.1&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2024-03-20 22:00:14Z INFO MessageListener] Get next message has been cancelled.
+[2024-03-20 22:00:14Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2024-03-20 22:00:14Z INFO JobDispatcher] Ensure WorkerDispatcher for job ca395085-040a-526b-2ce8-bdc85f692774 run to finish, cancel any running job.
+[2024-03-20 22:00:14Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2024-03-20 22:00:14Z INFO Runner] Deleting Runner Session...
+[2024-03-20 22:00:15Z INFO Listener] Runner execution been cancelled.

@@ -1,0 +1,3301 @@
+[2024-03-21 07:10:14Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2024-03-21 07:10:14Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:14Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:14Z INFO HostContext] Well known config file 'Credentials': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.credentials'
+[2024-03-21 07:10:14Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:14Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:14Z INFO HostContext] Well known config file 'Runner': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.runner'
+[2024-03-21 07:10:14Z INFO Worker] Version: 2.314.1
+[2024-03-21 07:10:14Z INFO Worker] Commit: 976290d966e6cc3e748a49bf8fdbe139ff764201
+[2024-03-21 07:10:14Z INFO Worker] Culture: ru-BY
+[2024-03-21 07:10:14Z INFO Worker] UI Culture: ru-RU
+[2024-03-21 07:10:14Z INFO Worker] Waiting to receive the job message from the channel.
+[2024-03-21 07:10:14Z INFO ProcessChannel] Receiving message of length 24332, with hash 'c689c512b02ba8264ac49a381018ae1ddcf04983b6f3f637f24d2a8d2c37a99e'
+[2024-03-21 07:10:14Z INFO Worker] Message received.
+[2024-03-21 07:10:15Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/cicd.yaml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v4",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 13,
+        "col": 15,
+        "lit": "Checkout repository"
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "a60052d4-79a0-5821-3eeb-84adb9872c5b",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 16,
+        "col": 15,
+        "lit": "Build the Docker image"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 17,
+              "col": 14,
+              "lit": "docker build -t my_obraz ."
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "dd23db01-cff6-57a4-373a-5c8097a97333",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 19,
+        "col": 15,
+        "lit": "Deploy the Docker image"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 20,
+              "col": 14,
+              "lit": "docker run -p 80:80 my_obraz"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "87b991c0-db8a-593e-4233-d8a37f15e4c9",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 22,
+        "col": 15,
+        "lit": "Print Message"
+      },
+      "contextName": "__run_3",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 23,
+              "col": 14,
+              "lit": "echo \"Docker image deployed successfully\""
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "6cb15225-bace-5236-3d64-8b6d88bf381f",
+      "name": "__run_3"
+    }
+  ],
+  "variables": {
+    "system.isScheduled": {
+      "value": "False"
+    },
+    "system.servertype": {
+      "value": "Hosted"
+    },
+    "system.culture": {
+      "value": ""
+    },
+    "system.pipelineStartTime": {
+      "value": "2024-03-21 07:10:10+00:00"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "system.teamProjectId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "build.buildId": {
+      "value": "33"
+    },
+    "build.containerId": {
+      "value": "14709684"
+    },
+    "system.workflowFilePath": {
+      "value": ".github/workflows/cicd.yaml"
+    },
+    "system.phaseDisplayName": {
+      "value": "build"
+    },
+    "system.phaseId": {
+      "value": "6884a131-87da-5381-61f3-d7acc3b91d76"
+    },
+    "system.phaseName": {
+      "value": "build"
+    },
+    "system.phaseAttempt": {
+      "value": "1"
+    },
+    "system.jobIdentifier": {
+      "value": "build.__default"
+    },
+    "system.jobAttempt": {
+      "value": "1"
+    },
+    "System.JobPositionInPhase": {
+      "value": "1"
+    },
+    "System.TotalJobsInPhase": {
+      "value": "1"
+    },
+    "system.github.job": {
+      "value": "build"
+    },
+    "system.jobDisplayName": {
+      "value": "build"
+    },
+    "system.jobId": {
+      "value": "ca395085-040a-526b-2ce8-bdc85f692774"
+    },
+    "system.jobName": {
+      "value": "__default"
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "True"
+    },
+    "system.orchestrationId": {
+      "value": "0e4fe4bb-6d9b-4cef-9f3d-6255b20d6c85.build.__default"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "Actions",
+    "version": 39,
+    "planId": "0e4fe4bb-6d9b-4cef-9f3d-6255b20d6c85",
+    "planGroup": "Actions:00000000-0000-0000-0000-000000000000:1",
+    "artifactUri": "vstfs:///Build/Build/33",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {},
+      "id": 3,
+      "name": "Kursach"
+    },
+    "owner": {
+      "_links": {},
+      "id": 3,
+      "name": "AnastasiyaVasilevskaya"
+    }
+  },
+  "timeline": {
+    "id": "0e4fe4bb-6d9b-4cef-9f3d-6255b20d6c85",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "ca395085-040a-526b-2ce8-bdc85f692774",
+  "jobDisplayName": "build",
+  "jobName": "__default",
+  "requestId": 33,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "27835345-7fc5-485b-bb30-b04c9be83fcd",
+          "ServerName": "hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp",
+          "CacheServerUrl": "https://acghubeus1.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/",
+          "FeedStreamUrl": "https://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "ConnectivityChecks": "[\"https://acghubeus0.actions.githubusercontent.com/_apis/health\",\"https://results-receiver.actions.githubusercontent.com/health\",\"https://actions-results-receiver-production.githubapp.com/health\",\"https://pipelinesghubeus13.actions.githubusercontent.com/_apis/health\"]"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "245a112fa2786af04a77c27c9aa51569bf2ef66f"
+        },
+        {
+          "k": "repository",
+          "v": "AnastasiyaVasilevskaya/Kursach"
+        },
+        {
+          "k": "repository_owner",
+          "v": "AnastasiyaVasilevskaya"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "94404108"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/AnastasiyaVasilevskaya/Kursach.git"
+        },
+        {
+          "k": "run_id",
+          "v": "8370920389"
+        },
+        {
+          "k": "run_number",
+          "v": "24"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "4"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "repo-self-hosted-runners-disabled",
+          "v": false
+        },
+        {
+          "k": "enterprise-managed-business-id",
+          "v": ""
+        },
+        {
+          "k": "repository_id",
+          "v": "760724925"
+        },
+        {
+          "k": "actor_id",
+          "v": "94404108"
+        },
+        {
+          "k": "actor",
+          "v": "AnastasiyaVasilevskaya"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "AnastasiyaVasilevskaya"
+        },
+        {
+          "k": "workflow",
+          "v": "CI/CD Pipeline"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "245a112fa2786af04a77c27c9aa51569bf2ef66f"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "cdbf15d7a37a1a8bfa3fa7e55beb2790bf7099c5"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "nastena2004vasil@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Anastasiya Vasilevskaya"
+                              },
+                              {
+                                "k": "username",
+                                "v": "AnastasiyaVasilevskaya"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "nastena2004vasil@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Anastasiya Vasilevskaya"
+                              },
+                              {
+                                "k": "username",
+                                "v": "AnastasiyaVasilevskaya"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "245a112fa2786af04a77c27c9aa51569bf2ef66f"
+                        },
+                        {
+                          "k": "message",
+                          "v": "update pipeline"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2024-03-21T10:02:26+03:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "9b04f4a8047b454c68df292885046b8eb3d3dbde"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/AnastasiyaVasilevskaya/Kursach/commit/245a112fa2786af04a77c27c9aa51569bf2ef66f"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/AnastasiyaVasilevskaya/Kursach/compare/cdbf15d7a37a...245a112fa278"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "nastena2004vasil@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Anastasiya Vasilevskaya"
+                          },
+                          {
+                            "k": "username",
+                            "v": "AnastasiyaVasilevskaya"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "nastena2004vasil@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Anastasiya Vasilevskaya"
+                          },
+                          {
+                            "k": "username",
+                            "v": "AnastasiyaVasilevskaya"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "245a112fa2786af04a77c27c9aa51569bf2ef66f"
+                    },
+                    {
+                      "k": "message",
+                      "v": "update pipeline"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2024-03-21T10:02:26+03:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "9b04f4a8047b454c68df292885046b8eb3d3dbde"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/AnastasiyaVasilevskaya/Kursach/commit/245a112fa2786af04a77c27c9aa51569bf2ef66f"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "94404108+AnastasiyaVasilevskaya@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "AnastasiyaVasilevskaya"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/AnastasiyaVasilevskaya/Kursach.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1708459437.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": "DevOps, CI/CD"
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "AnastasiyaVasilevskaya/Kursach"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/AnastasiyaVasilevskaya/Kursach.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/AnastasiyaVasilevskaya/Kursach"
+                    },
+                    {
+                      "k": "id",
+                      "v": 760724925.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "Dockerfile"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "Kursach"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOLVe9vQ"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/94404108?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "94404108+AnastasiyaVasilevskaya@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/AnastasiyaVasilevskaya/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/AnastasiyaVasilevskaya/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/AnastasiyaVasilevskaya/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/AnastasiyaVasilevskaya/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/AnastasiyaVasilevskaya"
+                          },
+                          {
+                            "k": "id",
+                            "v": 94404108.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "AnastasiyaVasilevskaya"
+                          },
+                          {
+                            "k": "name",
+                            "v": "AnastasiyaVasilevskaya"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOBaB-DA"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/AnastasiyaVasilevskaya/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/AnastasiyaVasilevskaya/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/AnastasiyaVasilevskaya/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/AnastasiyaVasilevskaya/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/AnastasiyaVasilevskaya/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/AnastasiyaVasilevskaya"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1711004588.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 27384.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:AnastasiyaVasilevskaya/Kursach.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/AnastasiyaVasilevskaya/Kursach"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/AnastasiyaVasilevskaya/Kursach/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2024-02-20T20:04:39Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/AnastasiyaVasilevskaya/Kursach"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/94404108?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/AnastasiyaVasilevskaya/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/AnastasiyaVasilevskaya/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/AnastasiyaVasilevskaya/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/AnastasiyaVasilevskaya/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/AnastasiyaVasilevskaya"
+                    },
+                    {
+                      "k": "id",
+                      "v": 94404108.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "AnastasiyaVasilevskaya"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOBaB-DA"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/AnastasiyaVasilevskaya/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/AnastasiyaVasilevskaya/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/AnastasiyaVasilevskaya/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/AnastasiyaVasilevskaya/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/AnastasiyaVasilevskaya/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/AnastasiyaVasilevskaya"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "workflow_ref",
+          "v": "AnastasiyaVasilevskaya/Kursach/.github/workflows/cicd.yaml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "245a112fa2786af04a77c27c9aa51569bf2ef66f"
+        }
+      ]
+    },
+    "run-feature-flags": {
+      "t": 2,
+      "d": [
+        {
+          "k": "actions_stream_logs_via_results_service",
+          "v": true
+        },
+        {
+          "k": "actions_use_results_service",
+          "v": true
+        }
+      ]
+    },
+    "partialrerun": true,
+    "needs": {
+      "t": 2
+    },
+    "vars": null,
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "EndpointsOverride": null
+  }
+}
+[2024-03-21 07:10:15Z INFO JobRunner] Job ID ca395085-040a-526b-2ce8-bdc85f692774
+[2024-03-21 07:10:15Z INFO JobRunner] Creating job server with URL: https://pipelinesghubeus13.actions.githubusercontent.com/hFvxcCW0rNIjOPb7J2x5FG3dgKm4xHk1lEk9Fl5bBnYehGfMqp/
+[2024-03-21 07:10:15Z INFO ConfigurationStore] currentAssemblyLocation: D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin\Runner.Worker.dll
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO ConfigurationStore] binPath: D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO ConfigurationStore] RootFolder: D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known config file 'Runner': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.runner'
+[2024-03-21 07:10:15Z INFO ConfigurationStore] ConfigFilePath: D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.runner
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known config file 'Credentials': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.credentials'
+[2024-03-21 07:10:15Z INFO ConfigurationStore] CredFilePath: D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.credentials
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known config file 'MigratedCredentials': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.credentials_migrated'
+[2024-03-21 07:10:15Z INFO ConfigurationStore] MigratedCredFilePath: D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.credentials_migrated
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known config file 'Service': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.service'
+[2024-03-21 07:10:15Z INFO ConfigurationStore] ServiceConfigFilePath: D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.service
+[2024-03-21 07:10:15Z INFO ConfigurationStore] Read setting file: 315 chars
+[2024-03-21 07:10:15Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2024-03-21 07:10:15Z INFO Worker] Listening for cancel message from the channel.
+[2024-03-21 07:10:15Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2024-03-21 07:10:15Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2024-03-21 07:10:15Z INFO JobServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2024-03-21 07:10:15Z INFO JobServer] Attempting to start websocket client with delay 00:00:00.
+[2024-03-21 07:10:15Z INFO JobServerQueue] Initializing results client
+[2024-03-21 07:10:15Z INFO JobServerQueue] Start process web console line queue.
+[2024-03-21 07:10:15Z INFO JobServerQueue] Start process file upload queue.
+[2024-03-21 07:10:15Z INFO JobServerQueue] Start results file upload queue.
+[2024-03-21 07:10:15Z INFO JobServerQueue] Starting results-based upload queue...
+[2024-03-21 07:10:15Z INFO JobServerQueue] Start process timeline update queue.
+[2024-03-21 07:10:15Z INFO ExecutionContext] Initialize GitHub context
+[2024-03-21 07:10:15Z INFO ExecutionContext] Initialize Env context
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:15Z INFO JobRunner] Starting the job execution context.
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:15Z INFO JobRunner] Validating directory permissions for: 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Tools': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_tool'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Temp': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp'
+[2024-03-21 07:10:15Z INFO JobRunner] Getting job extension.
+[2024-03-21 07:10:15Z INFO JobRunner] Initialize job. Getting all job steps.
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known config file 'Credentials': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.credentials'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known config file 'SetupInfo': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\.setup_info'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:15Z INFO PipelineDirectoryManager] Loading tracking config if exists: D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_PipelineMapping\AnastasiyaVasilevskaya/Kursach\PipelineFolder.json
+[2024-03-21 07:10:15Z INFO PipelineDirectoryManager] Updating job run properties.
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:15Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:16Z INFO JobExtension] Downloading actions
+[2024-03-21 07:10:16Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:16Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:16Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:16Z INFO HostContext] Well known directory 'Actions': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions'
+[2024-03-21 07:10:16Z INFO JobServer] Successfully started websocket client.
+[2024-03-21 07:10:16Z INFO JobServerQueue] Try to append 1 batches web console lines for record '67e3fb8a-7fac-4d6e-a1f8-363cb14d4c75', success rate: 1/1.
+[2024-03-21 07:10:16Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:16Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:16Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:16Z INFO HostContext] Well known directory 'Actions': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions'
+[2024-03-21 07:10:16Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:16Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:16Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:16Z INFO HostContext] Well known directory 'Actions': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions'
+[2024-03-21 07:10:16Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/zipball/b4ffde65f46336ab88eb53be808477a3936bae11' into D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions\_temp_f8f5e883-ad8e-491b-b5b4-ddf58001a764\16ad9049-6930-4ddc-a22c-673b3a92118b.zip.
+[2024-03-21 07:10:16Z INFO JobServerQueue] Try to append 1 batches web console lines for record '67e3fb8a-7fac-4d6e-a1f8-363cb14d4c75', success rate: 1/1.
+[2024-03-21 07:10:17Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2024-03-21 07:10:17Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/checkout/zipball/b4ffde65f46336ab88eb53be808477a3936bae11 X-GitHub-Request-Id: F3FF:3F0ABD:890E33:9F28E8:65FBDD57 Http Status: OK
+[2024-03-21 07:10:17Z INFO ActionManager] Finished getting action repository.
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Actions': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions'
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Actions': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions'
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 66,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 72,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 75,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 78,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 81,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 90,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 91,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 93,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2024-03-21 07:10:17Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Actions': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions'
+[2024-03-21 07:10:17Z INFO ActionManager] Load action that reference repository from 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions\actions\checkout\v4'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Actions': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions'
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 66,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 72,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 75,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 78,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 81,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 90,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 91,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 93,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2024-03-21 07:10:17Z INFO ActionManager] Action pre node.js file: N/A.
+[2024-03-21 07:10:17Z INFO ActionManager] Action node.js file: dist/index.js.
+[2024-03-21 07:10:17Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2024-03-21 07:10:17Z INFO JobExtension] Adding .
+[2024-03-21 07:10:17Z INFO JobExtension] Adding .
+[2024-03-21 07:10:17Z INFO JobExtension] Adding .
+[2024-03-21 07:10:17Z INFO JobExtension] Adding .
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:17Z INFO JobExtension] Total accessible running process: 274.
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:17Z INFO JobExtension] Start checking server connectivity.
+[2024-03-21 07:10:17Z INFO JobExtension] Check server connectivity for https://acghubeus0.actions.githubusercontent.com/_apis/health.
+[2024-03-21 07:10:17Z INFO JobExtension] Check server connectivity for https://results-receiver.actions.githubusercontent.com/health.
+[2024-03-21 07:10:17Z INFO JobExtension] Check server connectivity for https://actions-results-receiver-production.githubapp.com/health.
+[2024-03-21 07:10:17Z INFO JobExtension] Check server connectivity for https://pipelinesghubeus13.actions.githubusercontent.com/_apis/health.
+[2024-03-21 07:10:17Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "67e3fb8a-7fac-4d6e-a1f8-363cb14d4c75",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 2,
+  "startTime": "2024-03-21T07:10:15.9698176Z",
+  "finishTime": "2024-03-21T07:10:17.7237246Z"
+}.
+[2024-03-21 07:10:17Z INFO JobRunner] Total job steps: 4.
+[2024-03-21 07:10:17Z INFO JobRunner] Run all job steps.
+[2024-03-21 07:10:17Z INFO StepsRunner] Processing step: DisplayName='Checkout repository'
+[2024-03-21 07:10:17Z INFO StepsRunner] Evaluating: success()
+[2024-03-21 07:10:17Z INFO StepsRunner] Result: true
+[2024-03-21 07:10:17Z INFO StepsRunner] Starting the step.
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:17Z INFO StepsRunner] Which: 'chcp'
+[2024-03-21 07:10:17Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper] Process started with process id 14684, waiting for process exit.
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper] Finished process 14684 with exit code 0, and elapsed time 00:00:00.0153243.
+[2024-03-21 07:10:17Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2024-03-21 07:10:17Z INFO JobServerQueue] Try to append 1 batches web console lines for record '67e3fb8a-7fac-4d6e-a1f8-363cb14d4c75', success rate: 1/1.
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Actions': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions'
+[2024-03-21 07:10:17Z INFO ActionManager] Load action that reference repository from 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions\actions\checkout\v4'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Actions': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions'
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 66,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 72,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 75,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 78,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 81,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 90,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 91,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 93,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2024-03-21 07:10:17Z INFO ActionManager] Action pre node.js file: N/A.
+[2024-03-21 07:10:17Z INFO ActionManager] Action node.js file: dist/index.js.
+[2024-03-21 07:10:17Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2024-03-21 07:10:17Z INFO ExecutionContext] Reserve record order 6 to 10 for post job actions.
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Temp': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp'
+[2024-03-21 07:10:17Z INFO ExecutionContext] Write event payload to D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp\_github_workflow\event.json
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Temp': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp'
+[2024-03-21 07:10:17Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "AnastasiyaVasilevskaya/Kursach"
+}
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'filter': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 60,
+  "col": 14,
+  "lit": ""
+}
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 65,
+  "col": 14,
+  "lit": ""
+}
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 69,
+  "col": 14,
+  "lit": "true"
+}
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 72,
+  "col": 14,
+  "lit": "1"
+}
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 75,
+  "col": 14,
+  "lit": "false"
+}
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'show-progress': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 78,
+  "col": 14,
+  "lit": "true"
+}
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 81,
+  "col": 14,
+  "lit": "false"
+}
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 90,
+  "col": 14,
+  "lit": "false"
+}
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 93,
+  "col": 14,
+  "lit": "true"
+}
+[2024-03-21 07:10:17Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2024-03-21 07:10:17Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2024-03-21 07:10:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2024-03-21 07:10:17Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2024-03-21 07:10:17Z INFO ActionCommandManager] Register action command extension for command set-env
+[2024-03-21 07:10:17Z INFO ActionCommandManager] Register action command extension for command set-output
+[2024-03-21 07:10:17Z INFO ActionCommandManager] Register action command extension for command save-state
+[2024-03-21 07:10:17Z INFO ActionCommandManager] Register action command extension for command add-path
+[2024-03-21 07:10:17Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2024-03-21 07:10:17Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2024-03-21 07:10:17Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2024-03-21 07:10:17Z INFO ActionCommandManager] Register action command extension for command warning
+[2024-03-21 07:10:17Z INFO ActionCommandManager] Register action command extension for command error
+[2024-03-21 07:10:17Z INFO ActionCommandManager] Register action command extension for command notice
+[2024-03-21 07:10:17Z INFO ActionCommandManager] Register action command extension for command debug
+[2024-03-21 07:10:17Z INFO ActionCommandManager] Register action command extension for command group
+[2024-03-21 07:10:17Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2024-03-21 07:10:17Z INFO ActionCommandManager] Register action command extension for command echo
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:17Z INFO HostContext] Well known directory 'Externals': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\externals'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\externals\node20\bin\node.exe'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   Arguments: '"D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions\actions\checkout\v4\dist/index.js"'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\Kursach\Kursach'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-03-21 07:10:17Z INFO ProcessInvokerWrapper] Process started with process id 6964, waiting for process exit.
+[2024-03-21 07:10:17Z INFO JobServerQueue] Got a step log file to send to results service.
+[2024-03-21 07:10:17Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag\blocks\0e4fe4bb-6d9b-4cef-9f3d-6255b20d6c85_67e3fb8a-7fac-4d6e-a1f8-363cb14d4c75.1
+[2024-03-21 07:10:18Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a60052d4-79a0-5821-3eeb-84adb9872c5b', success rate: 1/1.
+[2024-03-21 07:10:18Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2024-03-21 07:10:18Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2024-03-21 07:10:18Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a60052d4-79a0-5821-3eeb-84adb9872c5b', success rate: 1/1.
+[2024-03-21 07:10:18Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a60052d4-79a0-5821-3eeb-84adb9872c5b', success rate: 1/1.
+[2024-03-21 07:10:19Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2024-03-21 07:10:19Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a60052d4-79a0-5821-3eeb-84adb9872c5b', success rate: 1/1.
+[2024-03-21 07:10:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a60052d4-79a0-5821-3eeb-84adb9872c5b', success rate: 1/1.
+[2024-03-21 07:10:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a60052d4-79a0-5821-3eeb-84adb9872c5b', success rate: 1/1.
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper] Finished process 6964 with exit code 0, and elapsed time 00:00:03.7525489.
+[2024-03-21 07:10:21Z INFO CreateStepSummaryCommand] Step Summary file (D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp\_runner_file_commands\step_summary_eab7b30f-9edb-4843-a1b2-642f98fa92b9) is empty; skipping attachment upload
+[2024-03-21 07:10:21Z INFO StepsRunner] Step result: 
+[2024-03-21 07:10:21Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v4",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "a60052d4-79a0-5821-3eeb-84adb9872c5b",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 4,
+  "startTime": "2024-03-21T07:10:17.7479127Z",
+  "finishTime": "2024-03-21T07:10:21.6535205Z"
+}.
+[2024-03-21 07:10:21Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2024-03-21 07:10:21Z INFO StepsRunner] Current state: job state = ''
+[2024-03-21 07:10:21Z INFO StepsRunner] Processing step: DisplayName='Build the Docker image'
+[2024-03-21 07:10:21Z INFO StepsRunner] Evaluating: success()
+[2024-03-21 07:10:21Z INFO StepsRunner] Result: true
+[2024-03-21 07:10:21Z INFO StepsRunner] Starting the step.
+[2024-03-21 07:10:21Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:21Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:21Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:21Z INFO StepsRunner] Which: 'chcp'
+[2024-03-21 07:10:21Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper] Process started with process id 8452, waiting for process exit.
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper] Finished process 8452 with exit code 0, and elapsed time 00:00:00.0095745.
+[2024-03-21 07:10:21Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2024-03-21 07:10:21Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:21Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:21Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:21Z INFO HostContext] Well known directory 'Temp': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp'
+[2024-03-21 07:10:21Z INFO ExecutionContext] Write event payload to D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp\_github_workflow\event.json
+[2024-03-21 07:10:21Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:21Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:21Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:21Z INFO HostContext] Well known directory 'Temp': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp'
+[2024-03-21 07:10:21Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2024-03-21 07:10:21Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2024-03-21 07:10:21Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2024-03-21 07:10:21Z INFO ActionCommandManager] Register action command extension for command set-env
+[2024-03-21 07:10:21Z INFO ActionCommandManager] Register action command extension for command set-output
+[2024-03-21 07:10:21Z INFO ActionCommandManager] Register action command extension for command save-state
+[2024-03-21 07:10:21Z INFO ActionCommandManager] Register action command extension for command add-path
+[2024-03-21 07:10:21Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2024-03-21 07:10:21Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2024-03-21 07:10:21Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2024-03-21 07:10:21Z INFO ActionCommandManager] Register action command extension for command warning
+[2024-03-21 07:10:21Z INFO ActionCommandManager] Register action command extension for command error
+[2024-03-21 07:10:21Z INFO ActionCommandManager] Register action command extension for command notice
+[2024-03-21 07:10:21Z INFO ActionCommandManager] Register action command extension for command debug
+[2024-03-21 07:10:21Z INFO ActionCommandManager] Register action command extension for command group
+[2024-03-21 07:10:21Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2024-03-21 07:10:21Z INFO ActionCommandManager] Register action command extension for command echo
+[2024-03-21 07:10:21Z INFO ScriptHandler] Which2: 'pwsh'
+[2024-03-21 07:10:21Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2024-03-21 07:10:21Z INFO ScriptHandler] Defaulting to powershell
+[2024-03-21 07:10:21Z INFO ScriptHandler] Which2: 'powershell'
+[2024-03-21 07:10:21Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2024-03-21 07:10:21Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:21Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:21Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:21Z INFO HostContext] Well known directory 'Temp': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp'
+[2024-03-21 07:10:21Z INFO ScriptHandler] Which2: 'pwsh'
+[2024-03-21 07:10:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a60052d4-79a0-5821-3eeb-84adb9872c5b', success rate: 1/1.
+[2024-03-21 07:10:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'dd23db01-cff6-57a4-373a-5c8097a97333', success rate: 1/1.
+[2024-03-21 07:10:21Z INFO ScriptHandler] pwsh: command not found. Make sure 'pwsh' is installed and its location included in the 'Path' environment variable.
+[2024-03-21 07:10:21Z INFO ScriptHandler] Defaulting to powershell
+[2024-03-21 07:10:21Z INFO ScriptHandler] Which2: 'powershell'
+[2024-03-21 07:10:21Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp\54843bcf-4f23-4c45-bcd2-58dfd608d837.ps1'"'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\Kursach\Kursach'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-03-21 07:10:21Z INFO ProcessInvokerWrapper] Process started with process id 7328, waiting for process exit.
+[2024-03-21 07:10:22Z INFO JobServerQueue] Got a step log file to send to results service.
+[2024-03-21 07:10:22Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag\blocks\0e4fe4bb-6d9b-4cef-9f3d-6255b20d6c85_a60052d4-79a0-5821-3eeb-84adb9872c5b.1
+[2024-03-21 07:10:22Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2024-03-21 07:10:22Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper] Finished process 7328 with exit code 1, and elapsed time 00:00:01.1547096.
+[2024-03-21 07:10:22Z INFO CreateStepSummaryCommand] Step Summary file (D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp\_runner_file_commands\step_summary_f9d8cd55-4b2a-481e-bf63-bd4c63af80eb) is empty; skipping attachment upload
+[2024-03-21 07:10:22Z INFO StepsRunner] Step result: Failed
+[2024-03-21 07:10:22Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "dd23db01-cff6-57a4-373a-5c8097a97333",
+  "stepContextName": "__run",
+  "result": "failed",
+  "errorMessages": [
+    "Process completed with exit code 1."
+  ],
+  "executionTimeInSeconds": 2,
+  "startTime": "2024-03-21T07:10:21.655472Z",
+  "finishTime": "2024-03-21T07:10:22.8775339Z"
+}.
+[2024-03-21 07:10:22Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2024-03-21 07:10:22Z INFO StepsRunner] Current state: job state = 'Failed'
+[2024-03-21 07:10:22Z INFO StepsRunner] Processing step: DisplayName='Deploy the Docker image'
+[2024-03-21 07:10:22Z INFO StepsRunner] Evaluating: success()
+[2024-03-21 07:10:22Z INFO StepsRunner] Result: false
+[2024-03-21 07:10:22Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2024-03-21 07:10:22Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2024-03-21 07:10:22Z INFO StepsRunner] Current state: job state = 'Failed'
+[2024-03-21 07:10:22Z INFO StepsRunner] Processing step: DisplayName='Print Message'
+[2024-03-21 07:10:22Z INFO StepsRunner] Evaluating: success()
+[2024-03-21 07:10:22Z INFO StepsRunner] Result: false
+[2024-03-21 07:10:22Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2024-03-21 07:10:22Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2024-03-21 07:10:22Z INFO StepsRunner] Current state: job state = 'Failed'
+[2024-03-21 07:10:22Z INFO StepsRunner] Processing step: DisplayName='Post Checkout repository'
+[2024-03-21 07:10:22Z INFO StepsRunner] Evaluating: always()
+[2024-03-21 07:10:22Z INFO StepsRunner] Result: true
+[2024-03-21 07:10:22Z INFO StepsRunner] Starting the step.
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:22Z INFO StepsRunner] Which: 'chcp'
+[2024-03-21 07:10:22Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper] Process started with process id 17712, waiting for process exit.
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper] Finished process 17712 with exit code 0, and elapsed time 00:00:00.0104943.
+[2024-03-21 07:10:22Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Actions': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions'
+[2024-03-21 07:10:22Z INFO ActionManager] Load action that reference repository from 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions\actions\checkout\v4'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Actions': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions'
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "filter"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 66,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 69,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 72,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 75,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 76,
+          "col": 3,
+          "lit": "show-progress"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 78,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 79,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 81,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 90,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 91,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 93,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 94,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node20",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2024-03-21 07:10:22Z INFO ActionManager] Action pre node.js file: N/A.
+[2024-03-21 07:10:22Z INFO ActionManager] Action node.js file: dist/index.js.
+[2024-03-21 07:10:22Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Temp': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp'
+[2024-03-21 07:10:22Z INFO ExecutionContext] Write event payload to D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp\_github_workflow\event.json
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Work': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Temp': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp'
+[2024-03-21 07:10:22Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "AnastasiyaVasilevskaya/Kursach"
+}
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'filter': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 60,
+  "col": 14,
+  "lit": ""
+}
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 65,
+  "col": 14,
+  "lit": ""
+}
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 69,
+  "col": 14,
+  "lit": "true"
+}
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 72,
+  "col": 14,
+  "lit": "1"
+}
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 75,
+  "col": 14,
+  "lit": "false"
+}
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'show-progress': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 78,
+  "col": 14,
+  "lit": "true"
+}
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 81,
+  "col": 14,
+  "lit": "false"
+}
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 90,
+  "col": 14,
+  "lit": "false"
+}
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 93,
+  "col": 14,
+  "lit": "true"
+}
+[2024-03-21 07:10:22Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2024-03-21 07:10:22Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2024-03-21 07:10:22Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2024-03-21 07:10:22Z INFO ActionCommandManager] Register action command extension for command set-env
+[2024-03-21 07:10:22Z INFO ActionCommandManager] Register action command extension for command set-output
+[2024-03-21 07:10:22Z INFO ActionCommandManager] Register action command extension for command save-state
+[2024-03-21 07:10:22Z INFO ActionCommandManager] Register action command extension for command add-path
+[2024-03-21 07:10:22Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2024-03-21 07:10:22Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2024-03-21 07:10:22Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2024-03-21 07:10:22Z INFO ActionCommandManager] Register action command extension for command warning
+[2024-03-21 07:10:22Z INFO ActionCommandManager] Register action command extension for command error
+[2024-03-21 07:10:22Z INFO ActionCommandManager] Register action command extension for command notice
+[2024-03-21 07:10:22Z INFO ActionCommandManager] Register action command extension for command debug
+[2024-03-21 07:10:22Z INFO ActionCommandManager] Register action command extension for command group
+[2024-03-21 07:10:22Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2024-03-21 07:10:22Z INFO ActionCommandManager] Register action command extension for command echo
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:22Z INFO HostContext] Well known directory 'Externals': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\externals'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper] Starting process:
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   File name: 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\externals\node20\bin\node.exe'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   Arguments: '"D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_actions\actions\checkout\v4\dist/index.js"'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   Working directory: 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\Kursach\Kursach'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2024-03-21 07:10:22Z INFO ProcessInvokerWrapper] Process started with process id 2656, waiting for process exit.
+[2024-03-21 07:10:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'dd23db01-cff6-57a4-373a-5c8097a97333', success rate: 1/1.
+[2024-03-21 07:10:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d2e8925-10fe-4e90-af53-0f48ec1e1f4f', success rate: 1/1.
+[2024-03-21 07:10:23Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2024-03-21 07:10:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d2e8925-10fe-4e90-af53-0f48ec1e1f4f', success rate: 1/1.
+[2024-03-21 07:10:23Z INFO JobServerQueue] Got a step log file to send to results service.
+[2024-03-21 07:10:23Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag\blocks\0e4fe4bb-6d9b-4cef-9f3d-6255b20d6c85_dd23db01-cff6-57a4-373a-5c8097a97333.1
+[2024-03-21 07:10:23Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2024-03-21 07:10:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record '3d2e8925-10fe-4e90-af53-0f48ec1e1f4f', success rate: 1/1.
+[2024-03-21 07:10:24Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2024-03-21 07:10:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-21 07:10:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2024-03-21 07:10:24Z INFO ProcessInvokerWrapper] Finished process 2656 with exit code 0, and elapsed time 00:00:01.6196111.
+[2024-03-21 07:10:24Z INFO CreateStepSummaryCommand] Step Summary file (D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp\_runner_file_commands\step_summary_6a920ed0-a5a9-4b39-828a-d94565f49609) is empty; skipping attachment upload
+[2024-03-21 07:10:24Z INFO StepsRunner] Step result: 
+[2024-03-21 07:10:24Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v4",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "3d2e8925-10fe-4e90-af53-0f48ec1e1f4f",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 2,
+  "startTime": "2024-03-21T07:10:22.8838787Z",
+  "finishTime": "2024-03-21T07:10:24.528131Z"
+}.
+[2024-03-21 07:10:24Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2024-03-21 07:10:24Z INFO StepsRunner] Current state: job state = 'Failed'
+[2024-03-21 07:10:24Z INFO JobRunner] Finalize job.
+[2024-03-21 07:10:24Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:24Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:24Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:24Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:24Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:24Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:24Z INFO JobExtension] Initialize Env context
+[2024-03-21 07:10:24Z INFO JobExtension] Initialize steps context
+[2024-03-21 07:10:24Z INFO JobExtension] Total accessible running process: 275.
+[2024-03-21 07:10:24Z INFO JobExtension] Inspecting process environment variables. PID: 16352 (SearchProtocolHost)
+[2024-03-21 07:10:24Z INFO JobExtension] Wait for all connectivity checks to finish.
+[2024-03-21 07:10:24Z INFO JobExtension] Connectivity check result: https://acghubeus0.actions.githubusercontent.com/_apis/health: OK
+[2024-03-21 07:10:24Z INFO JobExtension] Connectivity check result: https://results-receiver.actions.githubusercontent.com/health: OK
+[2024-03-21 07:10:24Z INFO JobExtension] Connectivity check result: https://actions-results-receiver-production.githubapp.com/health: OK
+[2024-03-21 07:10:24Z INFO JobExtension] Connectivity check result: https://pipelinesghubeus13.actions.githubusercontent.com/_apis/health: OK
+[2024-03-21 07:10:24Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "2611273d-2cfe-4257-8340-06619177ce08",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2024-03-21T07:10:24.55123Z",
+  "finishTime": "2024-03-21T07:10:24.5797686Z"
+}.
+[2024-03-21 07:10:24Z INFO JobRunner] Job result after all job steps finish: Failed
+[2024-03-21 07:10:24Z INFO JobRunner] Completing the job execution context.
+[2024-03-21 07:10:24Z INFO JobServerQueue] Try to append 1 batches web console lines for record '2611273d-2cfe-4257-8340-06619177ce08', success rate: 1/1.
+[2024-03-21 07:10:24Z INFO JobRunner] Shutting down the job server queue.
+[2024-03-21 07:10:24Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2024-03-21 07:10:25Z INFO JobServerQueue] All queue process task stopped.
+[2024-03-21 07:10:25Z INFO JobServerQueue] Web console line queue drained.
+[2024-03-21 07:10:25Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2024-03-21 07:10:26Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2024-03-21 07:10:26Z INFO JobServerQueue] File upload queue drained.
+[2024-03-21 07:10:26Z INFO JobServerQueue] Starting results-based upload queue...
+[2024-03-21 07:10:26Z INFO JobServerQueue] Uploading 3 file(s) in one shot through results service.
+[2024-03-21 07:10:26Z INFO JobServerQueue] Got a step log file to send to results service.
+[2024-03-21 07:10:26Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag\blocks\0e4fe4bb-6d9b-4cef-9f3d-6255b20d6c85_3d2e8925-10fe-4e90-af53-0f48ec1e1f4f.1
+[2024-03-21 07:10:26Z INFO JobServerQueue] Got a step log file to send to results service.
+[2024-03-21 07:10:26Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag\blocks\0e4fe4bb-6d9b-4cef-9f3d-6255b20d6c85_2611273d-2cfe-4257-8340-06619177ce08.1
+[2024-03-21 07:10:27Z INFO JobServerQueue] Got a job log file to send to results service.
+[2024-03-21 07:10:27Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag\blocks\0e4fe4bb-6d9b-4cef-9f3d-6255b20d6c85_ca395085-040a-526b-2ce8-bdc85f692774.1
+[2024-03-21 07:10:27Z INFO JobServerQueue] Tried to upload 3 file(s) to results, success rate: 3/3.
+[2024-03-21 07:10:27Z INFO JobServerQueue] Results upload queue drained.
+[2024-03-21 07:10:27Z INFO JobServerQueue] Timeline update queue drained.
+[2024-03-21 07:10:27Z INFO JobServerQueue] Disposing job server ...
+[2024-03-21 07:10:27Z INFO JobServerQueue] Disposing results server ...
+[2024-03-21 07:10:27Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2024-03-21 07:10:27Z INFO JobServerQueue] Actions upload time: 1970 ms, Result upload time: 3737 ms
+[2024-03-21 07:10:27Z INFO TempDirectoryManager] Cleaning runner temp folder: D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp
+[2024-03-21 07:10:27Z INFO HostContext] Well known directory 'Bin': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\bin'
+[2024-03-21 07:10:27Z INFO HostContext] Well known directory 'Root': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner'
+[2024-03-21 07:10:27Z INFO HostContext] Well known directory 'Diag': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag'
+[2024-03-21 07:10:27Z INFO HostContext] Well known config file 'Telemetry': 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_diag\.telemetry'
+[2024-03-21 07:10:27Z INFO JobRunner] Raising job completed event
+[2024-03-21 07:10:28Z INFO Worker] Job completed.

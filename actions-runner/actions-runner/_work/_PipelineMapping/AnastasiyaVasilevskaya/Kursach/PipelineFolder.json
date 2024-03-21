@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "AnastasiyaVasilevskaya/Kursach",
+  "pipelineDirectory": "Kursach",
+  "workspaceDirectory": "Kursach\\Kursach",
+  "repositories": {
+    "AnastasiyaVasilevskaya/Kursach": {
+      "repositoryPath": "Kursach\\Kursach",
+      "lastRunOn": "03/21/2024 09:53:07 +03:00"
+    }
+  },
+  "lastRunOn": "03/21/2024 10:10:15 +03:00"
+}

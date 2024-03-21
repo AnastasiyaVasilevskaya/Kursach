@@ -1,0 +1,62 @@
+﻿2024-03-21T06:57:01.5556704Z ##[group]Run actions/checkout@v4
+2024-03-21T06:57:01.5557499Z with:
+2024-03-21T06:57:01.5557818Z   repository: AnastasiyaVasilevskaya/Kursach
+2024-03-21T06:57:01.5558696Z   token: ***
+2024-03-21T06:57:01.5558981Z   ssh-strict: true
+2024-03-21T06:57:01.5559286Z   persist-credentials: true
+2024-03-21T06:57:01.5559634Z   clean: true
+2024-03-21T06:57:01.5559920Z   sparse-checkout-cone-mode: true
+2024-03-21T06:57:01.5560297Z   fetch-depth: 1
+2024-03-21T06:57:01.5560580Z   fetch-tags: false
+2024-03-21T06:57:01.5560887Z   show-progress: true
+2024-03-21T06:57:01.5561197Z   lfs: false
+2024-03-21T06:57:01.5561445Z   submodules: false
+2024-03-21T06:57:01.5561757Z   set-safe-directory: true
+2024-03-21T06:57:01.5562084Z ##[endgroup]
+2024-03-21T06:57:01.8915684Z Syncing repository: AnastasiyaVasilevskaya/Kursach
+2024-03-21T06:57:01.8919170Z ##[group]Getting Git version info
+2024-03-21T06:57:01.8921196Z Working directory is 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\Kursach\Kursach'
+2024-03-21T06:57:01.8994510Z [command]D:\Git\cmd\git.exe version
+2024-03-21T06:57:01.9298446Z git version 2.43.0.windows.1
+2024-03-21T06:57:01.9369345Z ##[endgroup]
+2024-03-21T06:57:01.9387733Z Copying 'C:\Users\naste\.gitconfig' to 'D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp\fb7ddf8c-d9f0-427e-9d1b-febc5ff8f79c\.gitconfig'
+2024-03-21T06:57:01.9422161Z Temporarily overriding HOME='D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\_temp\fb7ddf8c-d9f0-427e-9d1b-febc5ff8f79c' before making global git config changes
+2024-03-21T06:57:01.9424186Z Adding repository directory to the temporary git global config as a safe directory
+2024-03-21T06:57:01.9436662Z [command]D:\Git\cmd\git.exe config --global --add safe.directory D:\Учёба\kursach\Dev-course\python\actions-runner\actions-runner\_work\Kursach\Kursach
+2024-03-21T06:57:01.9828081Z [command]D:\Git\cmd\git.exe config --local --get remote.origin.url
+2024-03-21T06:57:02.0234415Z https://github.com/AnastasiyaVasilevskaya/Kursach
+2024-03-21T06:57:02.0291001Z ##[group]Removing previously created refs, to avoid conflicts
+2024-03-21T06:57:02.0299030Z [command]D:\Git\cmd\git.exe rev-parse --symbolic-full-name --verify --quiet HEAD
+2024-03-21T06:57:02.0576929Z refs/heads/main
+2024-03-21T06:57:02.0622557Z [command]D:\Git\cmd\git.exe checkout --detach
+2024-03-21T06:57:02.0983897Z HEAD is now at cdbf15d Merge branch 'main' of https://github.com/AnastasiyaVasilevskaya/Kursach
+2024-03-21T06:57:02.1724005Z ##[endgroup]
+2024-03-21T06:57:02.1734879Z [command]D:\Git\cmd\git.exe submodule status
+2024-03-21T06:57:02.9023214Z ##[group]Cleaning the repository
+2024-03-21T06:57:02.9031487Z [command]D:\Git\cmd\git.exe clean -ffdx
+2024-03-21T06:57:02.9381776Z [command]D:\Git\cmd\git.exe reset --hard HEAD
+2024-03-21T06:57:02.9761570Z HEAD is now at cdbf15d Merge branch 'main' of https://github.com/AnastasiyaVasilevskaya/Kursach
+2024-03-21T06:57:02.9801005Z ##[endgroup]
+2024-03-21T06:57:02.9808662Z ##[group]Disabling automatic garbage collection
+2024-03-21T06:57:02.9817189Z [command]D:\Git\cmd\git.exe config --local gc.auto 0
+2024-03-21T06:57:03.0182823Z ##[endgroup]
+2024-03-21T06:57:03.0183704Z ##[group]Setting up auth
+2024-03-21T06:57:03.0201620Z [command]D:\Git\cmd\git.exe config --local --name-only --get-regexp core\.sshCommand
+2024-03-21T06:57:03.0554407Z [command]D:\Git\cmd\git.exe submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2024-03-21T06:57:03.6964600Z [command]D:\Git\cmd\git.exe config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-03-21T06:57:03.7286907Z [command]D:\Git\cmd\git.exe submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2024-03-21T06:57:04.3861119Z [command]D:\Git\cmd\git.exe config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2024-03-21T06:57:04.4262663Z ##[endgroup]
+2024-03-21T06:57:04.4263208Z ##[group]Fetching the repository
+2024-03-21T06:57:04.4278761Z [command]D:\Git\cmd\git.exe -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +cdbf15d7a37a1a8bfa3fa7e55beb2790bf7099c5:refs/remotes/origin/main
+2024-03-21T06:57:05.1104134Z ##[endgroup]
+2024-03-21T06:57:05.1104864Z ##[group]Determining the checkout info
+2024-03-21T06:57:05.1107086Z ##[endgroup]
+2024-03-21T06:57:05.1107838Z ##[group]Checking out the ref
+2024-03-21T06:57:05.1120504Z [command]D:\Git\cmd\git.exe checkout --progress --force -B main refs/remotes/origin/main
+2024-03-21T06:57:05.1606419Z branch 'main' set up to track 'origin/main'.
+2024-03-21T06:57:05.1607823Z Your branch is up to date with 'origin/main'.
+2024-03-21T06:57:05.1608800Z Switched to and reset branch 'main'
+2024-03-21T06:57:05.1645571Z ##[endgroup]
+2024-03-21T06:57:05.1982118Z [command]D:\Git\cmd\git.exe log -1 --format='%H'
+2024-03-21T06:57:05.2269074Z 'cdbf15d7a37a1a8bfa3fa7e55beb2790bf7099c5'
